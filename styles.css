@@ -1,9 +1,232 @@
 
+@font-face {
+    font-family:'RookiePunk';
+    src: url('/media/assets/RookiePunk.ttf');
+}
+
 #header {
-    background-color: #95ffe8;
+    background-color: #000;
 }
 
 
 #footer {
-    background-color: #95a5ff;
+    background-color: #000;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.punk {
+   font-family: 'RookiePunk';
+   letter-spacing: 0.1em;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1rem 0 0 0;
+}
+
+.header-nav {
+ display: flex;
+ justify-content: space-between;
+ padding: 0 1rem;
+ width: 100%;
+ max-width: 1200px;
+ align-items: center;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 2rem 1rem 5rem 1rem;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.footer-right {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-betweens;
+}
+
+.footer-right-col {
+    margin-left: 2rem;
+}
+
+.tour-component a,
+.album-component a {
+    background-color: #FF57B2;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 4px 8px;
+}
+
+.header-nav a,
+.footer-nav a
+ {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.header-nav a:hover {
+
+}
+
+.header-nav-links,
+.footer-nav-links {
+    margin-left: 1rem;
+}
+
+.header-nav-links a,
+.footer-nav-links a {
+    margin-right: 1rem;
+}
+
+.section-divider,
+.section-divider2 {
+    width: 80%;
+    max-width: 800px;
+    height: 3.5rem;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.section-divider h2 {
+    background-color: #D3FF58;
+    color: black;
+    letter-spacing: 0.1em;
+    padding: 0.5rem 1rem;
+    display:flex;
+}
+
+.section-divider2 h2 {
+    background-color: #FF57B2;
+    color: white;
+    letter-spacing: 0.1em;
+    padding: 0.5rem 1rem;
+    display: flex;
+}
+
+.image-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.background-image {
+    display: block;
+    max-height: 1200px;
+}
+
+.overlay-image1 {
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    width: 40%;
+}
+
+.overlay-image2 {
+    position: absolute;
+    top: 64%;
+    left: 35%;
+    width: 28%;
+}
+
+.textured-background {
+    position: relative;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url('/media/assets/texture-background1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 55vh;
+}
+
+.photo-background {
+    position: relative;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url('/media/assets/group_trevor_bg2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.tour-component {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0 2rem 0;
+    border-bottom: 1px solid white;
+}
+
+.tour-text {
+    text-align: left;
+    width: 40%;
+}
+
+.album-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    min-height: 600px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.album-component {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 50%;
+}
+
+.paragraph-container {
+    text-align: left;
+    width: 60%;
+    max-width: 600px;
+    min-height: 350px;
+    margin-top: 2rem;
+}
+
+.image-collage {
+    width: 100%;
+    display: flex;
+    margin: 2rem;
+}
+
+.ic-container img {
+    width: 100%;
 }
