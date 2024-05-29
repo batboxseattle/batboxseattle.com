@@ -1,27 +1,21 @@
-
 @font-face {
-    font-family:'RookiePunk';
+    font-family: 'RookiePunk';
     src: url('/media/assets/RookiePunk.ttf');
 }
-
-#header {
-    background-color: #000;
-}
-
-
-#footer {
-    background-color: #000;
-}
-
 
 body {
     background-color: black;
     color: white;
 }
 
+#header,
+#footer {
+    background-color: #000;
+}
+
 .punk {
-   font-family: 'RookiePunk';
-   letter-spacing: 0.1em;
+    font-family: 'RookiePunk';
+    letter-spacing: 0.1em;
 }
 
 p {
@@ -33,12 +27,16 @@ h2 {
     margin: 1rem 0 0 0;
 }
 
-.header-nav {
+.header-nav,
+.footer-nav {
     display: flex;
     justify-content: space-between;
+    max-width: 1200px;
+}
+
+.header-nav {
     padding: 0 1rem;
     width: 100%;
-    max-width: 1200px;
     align-items: center;
 }
 
@@ -49,9 +47,6 @@ h2 {
 }
 
 .footer-nav {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
     padding-top: 1.5rem;
     margin: 2rem 1rem 5rem 1rem;
 }
@@ -66,7 +61,7 @@ h2 {
     display: flex;
     width: 50%;
     flex-direction: row;
-    justify-content: space-betweens;
+    justify-content: space-between;
 }
 
 .footer-right-col {
@@ -76,50 +71,46 @@ h2 {
     width: 220px;
 }
 
+a.button-link,
+a.button-link2 {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 6px 12px;
+}
 
 a.button-link {
     background-color: #FF57B2;
     color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 4px 8px;
 }
 
 a.button-link2 {
     background-color: white;
-    color: Black;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 4px 8px;
+    color: black;
 }
 
-a.button-link:hover {
-    background-color: #c3066b;
-}
-
+a.button-link:hover,
 a.button-link2:hover {
     background-color: #c3066b;
     color: white;
 }
 
-.header-nav a {
-    font-size: 2rem;
-    color: white;
+.header-nav a,
+.footer-nav a {
     text-decoration: none;
 }
 
-.footer-nav a{
+.header-nav a {
+    font-size: 2rem;
+    color: white;
+}
+
+.footer-nav a {
     font-size: 1.5rem;
     color: white;
-    text-decoration: none;
 }
 
 .footer-nav a:hover {
     text-decoration: underline;
-}
-
-.header-nav a:hover {
-
 }
 
 .header-nav-links,
@@ -140,22 +131,21 @@ a.button-link2:hover {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+    display: flex;
 }
 
 .section-divider h2 {
     background-color: #D3FF58;
     color: black;
     letter-spacing: 0.1em;
-    padding: 0.5rem 1rem;
-    display:flex;
+    width: 100%;
 }
 
 .section-divider2 h2 {
     background-color: #FF57B2;
     color: white;
     letter-spacing: 0.1em;
-    padding: 0.5rem 1rem;
-    display: flex;
+    width: 100%;
 }
 
 .image-container {
@@ -169,33 +159,24 @@ a.button-link2:hover {
     max-height: 1200px;
 }
 
-.overlay-image1 {
+.overlay-image1,
+.overlay-image2 {
     position: absolute;
+}
+
+.overlay-image1 {
     top: 18%;
     left: 30%;
     width: 40%;
 }
 
 .overlay-image2 {
-    position: absolute;
-    top: 64%;
-    left: 35%;
-    width: 28%;
+    top: 65%;
+    left: 37%;
+    width: 23%;
 }
 
-.textured-background {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-image: url('/media/assets/texture-background1.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 55vh;
-}
-
+.textured-background,
 .photo-background {
     position: relative;
     width: 100%;
@@ -203,9 +184,17 @@ a.button-link2:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-image: url('/media/assets/group_trevor_bg2.png');
     background-size: cover;
     background-position: center;
+}
+
+.textured-background {
+    background-image: url('/media/assets/texture-background1.jpg');
+    min-height: 55vh;
+}
+
+.photo-background {
+    background-image: url('/media/assets/group_trevor_bg2.png');
 }
 
 .tour-component {
@@ -218,7 +207,7 @@ a.button-link2:hover {
     border-bottom: 1px solid white;
 }
 
-.tour-date{
+.tour-date {
     background-color: black;
     padding: 0.5rem 1rem 1rem 1rem;
 }
@@ -229,7 +218,7 @@ a.button-link2:hover {
 }
 
 .section-button {
-    margin: 2rem 0;
+    margin: 3rem 0 5rem 0;
 }
 
 .album-container {
