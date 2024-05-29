@@ -34,12 +34,12 @@ h2 {
 }
 
 .header-nav {
- display: flex;
- justify-content: space-between;
- padding: 0 1rem;
- width: 100%;
- max-width: 1200px;
- align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
 }
 
 .content-container {
@@ -52,6 +52,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
+    padding-top: 1.5rem;
     margin: 2rem 1rem 5rem 1rem;
 }
 
@@ -70,10 +71,13 @@ h2 {
 
 .footer-right-col {
     margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
 }
 
-.tour-component a,
-.album-component a {
+
+a.button-link {
     background-color: #FF57B2;
     color: white;
     text-decoration: none;
@@ -81,12 +85,37 @@ h2 {
     padding: 4px 8px;
 }
 
-.header-nav a,
-.footer-nav a
- {
+a.button-link2 {
+    background-color: white;
+    color: Black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 4px 8px;
+}
+
+a.button-link:hover {
+    background-color: #c3066b;
+}
+
+a.button-link2:hover {
+    background-color: #c3066b;
+    color: white;
+}
+
+.header-nav a {
     font-size: 2rem;
     color: white;
     text-decoration: none;
+}
+
+.footer-nav a{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
 }
 
 .header-nav a:hover {
@@ -95,7 +124,7 @@ h2 {
 
 .header-nav-links,
 .footer-nav-links {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 
 .header-nav-links a,
@@ -157,7 +186,6 @@ h2 {
 .textured-background {
     position: relative;
     width: 100%;
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,7 +199,6 @@ h2 {
 .photo-background {
     position: relative;
     width: 100%;
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,16 +218,25 @@ h2 {
     border-bottom: 1px solid white;
 }
 
+.tour-date{
+    background-color: black;
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+
 .tour-text {
     text-align: left;
-    width: 40%;
+    width: 50%;
+}
+
+.section-button {
+    margin: 2rem 0;
 }
 
 .album-container {
     display: flex;
     width: 80%;
     max-width: 1200px;
-    min-height: 600px;
+    min-height: 800px;
     justify-content: space-around;
     align-items: center;
 }
@@ -210,6 +246,7 @@ h2 {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+    margin-right: 1rem;
     width: 50%;
 }
 
@@ -229,4 +266,6 @@ h2 {
 
 .ic-container img {
     width: 100%;
+    min-height: 200px;
+    object-fit: cover;
 }
