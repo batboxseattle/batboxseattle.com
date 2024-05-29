@@ -1,0 +1,101 @@
+/* Responsive CSS page for Batbox Seattle website */
+
+
+/* Viewport Mobile */
+@media only screen and (max-width: 480px) {
+    .header-nav {
+        background-color: red;
+    }
+    
+    .header-nav a {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Viewport Large Mobile */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .header-nav {
+            background-color: blue;
+        }
+    
+    .header-nav a {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Viewport Tablet */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .header-nav {
+        background-color: green;
+    }
+    
+    .header-nav a {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Viewport Laptop */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .header-nav {
+            background-color: purple;
+        }
+    
+    .header-nav a {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Viewport Desktop */
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+    .header-nav {
+            background-color: teal;
+        }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.7rem;
+    }
+    p {
+        font-size: 1.3rem;
+        line-height: 130%;
+    }
+    a.button-link,
+    a.button-link2 {
+        font-size: 1.5rem;
+        padding: 6px 12px;
+    }
+
+    .footer-right {
+        width: 50%;
+    }
+}
+
+/* Viewport Larger */
+
+@media only screen and (min-width: 1441px) {
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.3rem;
+        line-height: 130%;
+    }
+    a.button-link,
+    a.button-link2 {
+        font-size: 1.6rem;
+        padding: 6px 12px;
+    }
+    .footer-right {
+        width: 50%;
+    }
+}
+
