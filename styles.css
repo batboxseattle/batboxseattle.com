@@ -64,6 +64,14 @@ a:hover {
     align-items: center;
 }
 
+.header-nav a:hover {
+    background-color: #000;
+}
+
+.header-nav .header-nav-links a:hover {
+    background-color: #c3066b;
+}
+
 .content-container {
     display: flex;
     flex-direction: column;
@@ -78,21 +86,22 @@ a:hover {
 .footer-left {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 30%;
 }
 
 .footer-right {
     display: flex;
-    width: 60%;
+    width: 70%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .footer-right-col {
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
-    width: 220px;
+    width: fit-content;
+    color: #999;
 }
 
 a.button-link,
@@ -264,7 +273,12 @@ a.button-link2:hover {
     max-width: 1200px;
     min-height: 800px;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
+    margin-top: 4rem;
+}
+
+.album-title, .album-description {
+    max-width: 300px;
 }
 
 .album-component {
@@ -273,7 +287,7 @@ a.button-link2:hover {
     align-items: flex-start;
     text-align: left;
     margin-right: 1rem;
-    width: 50%;
+    width: fit-content;
 }
 
 .paragraph-container {
@@ -315,6 +329,10 @@ a.button-link2:hover {
 .guest-name {
     margin-right: 1rem;
     width: 20%;
+}
+
+.guest-name h3 {
+    margin-top: 0.5rem;
 }
 
 .guest-description {
