@@ -5,8 +5,8 @@
 @media only screen and (max-width: 480px) {
     /* .header-nav {
         background-color: red;
-    }
-     */
+    } */
+    
     .header-nav a {
         font-size: 1.5rem;
     }
@@ -69,6 +69,20 @@
 
     .header-nav img {
         height: 150px;
+    }
+    .floating-widget {
+        bottom: -74px;
+        right: 0px;
+        width: 100%;
+        min-width: 400px;
+    }
+
+    .floating-widget iframe {
+        height: 150px;
+    }
+
+    .youtubeplayer {
+        width: 100%;
     }
 }
 
@@ -136,19 +150,36 @@
     .header-nav img {
         height: 150px;
     }
+    .floating-widget {
+        bottom: -52px;
+        right: 0px;
+        width: 100%;
+        min-width: 400px;
+    }
+
+    .floating-widget iframe {
+        height: 200px;
+    }
+
+    .youtubeplayer {
+        width: 100%;
+    }
 
 }
 
 
 /* Viewport Tablet */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    /* .header-nav {
-        background-color: green;
+    .header-nav {
+        /* background-color: green; */
         padding: 0 0.5rem;
-    } */
+    }
 
-    .album-container {
-        min-height: 650px;
+    .sticky-nav {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: black;
     }
     
     .header-nav a {
@@ -158,6 +189,19 @@
     .header-nav-links a {
         margin-right: 0rem;
     }
+    .floating-widget {
+        bottom: -40px;
+        right: 10px;
+        width: 20%;
+        min-width: 400px;
+    }
+
+    .floating-widget iframe {
+        height: 200px;
+    }
+    .youtubeplayer {
+        height: 35vh;
+    }
 }
 
 
@@ -166,13 +210,20 @@
     /* .header-nav {
             background-color: purple;
     } */
+
+    .sticky-nav {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: black;
+    }
     
     .header-nav a {
         font-size: 1.7rem;
     }
 
-    .album-container {
-        min-height: 650px;
+    .youtubeplayer {
+        height: 45vh;
     }
 }
 
@@ -181,7 +232,14 @@
 @media only screen and (min-width: 1201px) and (max-width: 1440px) {
     /* .header-nav {
             background-color: teal;
-        } */
+    } */
+
+    .sticky-nav {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: black;
+    }
     
     h2 {
         font-size: 2.5rem;
@@ -203,14 +261,20 @@
         width: 60%;
     }
 
-    .album-container {
-        min-height: 700px;
+    .youtubeplayer {
+        height: 50vh;
     }
 }
 
 /* Viewport Larger */
 
 @media only screen and (min-width: 1441px) {
+    .sticky-nav {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: black;
+    }
     h2 {
         font-size: 3rem;
     }

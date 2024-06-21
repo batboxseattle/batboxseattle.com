@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="responsive.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="scripts.js"></script>
+    <script src="hidebutton.js"></script>
 </head>
 
 <body>
-    <div id="header">
+    <div id="header" class="sticky-nav">
         <!-- reusable header goes here-->
     </div>
     <div class="content-container">
@@ -22,6 +23,28 @@
             <img src="/media/assets/test_imagecolor1.png" class="overlay-image1" alt="colortest1">
             <a href="https://open.spotify.com/artist/2fejw4OmvoKdWg2lGn57ed?si=xgBpbuiPT8O5hundnVKXrg" target=”_blank”><img src="/media/assets/test_imagecolor3.png" class="overlay-image2" alt="colortest2"></a
         </div>
+    </div>
+
+    <div class="floating-widget">
+        <button id="hideButton" class="hide-button">Hide Spotify player</button>
+        <iframe id="spotifyPlayer" style="border-radius:12px"
+        src="https://open.spotify.com/embed/artist/2fejw4OmvoKdWg2lGn57ed?utm_source=generator" width="100%"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div class="textured-background">
+        <div class="section-divider2">
+            <h2 class="punk">Featured video</h2>
+        </div>
+
+        <iframe class="youtubeplayer" src="https://www.youtube.com/embed/wzXQlJN57DY?si=UqPChMFLuu7TjID0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+            <a href="/music.html" class="section-button button-link2 punk">See more videos</a>
+     
     </div>
 
     <div class="textured-background">        
