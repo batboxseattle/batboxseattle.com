@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="responsive.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="scripts.js"></script>
+    <script src="hidebutton.js"></script>
 </head>
 
 <body>
@@ -17,50 +18,27 @@
         <!-- reusable header goes here-->
     </div>
 
+    <div class="floating-widget">
+        <button id="hideButton" class="hide-button">Hide Spotify player</button>
+        <iframe id="spotifyPlayer" style="border-radius:12px"
+            src="https://open.spotify.com/embed/artist/2fejw4OmvoKdWg2lGn57ed?utm_source=generator" width="100%"
+            frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
     <div class="textured-background">
         <div class="section-divider2">
             <h2 class="punk">Music</h2>
         </div>
         <div class="album-container">
-            <div class="album-component">
-                <img src="/media/assets/album_placeholder1.png" alt="trio batbox" width="200px">
-                <div class="album-title">
-                    <h2 class="punk">Placeholder album</h2>
-                </div>
-                <div class="album-description">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
-                        Nullam malesuada
-                        erat ut turpis.
-                    </p>
-                    <ol>
-                        <li>Satisfaction Blues<span class="songtime">4:01</span></li>
-                        <li>Bad Ideas and Worse Executions<span class="songtime">3:39</span></li>
-                        <li>Bear Trap<span class="songtime">5:19</span></li>
-                        <li>Not About You<span class="songtime">5:25</span></li>
-                        <li>The Ballad of Caleb Thompson<span class="songtime">3:52</span></li>
-                        <li>Up All Night<span class="songtime">5:07</span></li>
-                        <li>Jeans with Jean Jacket<span class="songtime">4:40</span></li>
-                        <li>Mistakes<span class="songtime">3:08</span></li>
-                        <li>Holy Water<span class="songtime">4:50</span></li>
-                    </ol>
-                </div>
-                <a href="#" class="button-link2 punk">Spotify - Listen now!</a>
-                <a href="#" class="button-link2 punk">Youtube - Listen now!</a>
-                
+            <div class="album-image-container">
+                <img src="/media/assets/punchingin1.png" alt="trio batbox" class="album-image">
             </div>
-    
-            <div class="album-component">
-                <img src="/media/assets/punchingin1.png" alt="trio batbox" width="200px">
+            <div class="album-details-container">
                 <div class="album-title">
                     <h2 class="punk">Punchin In</h2>
                 </div>
                 <div class="album-description">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
-                        Nullam malesuada
-                        erat ut turpis.
-                    </p>
                     <ol>
                         <li>Satisfaction Blues<span class="songtime">4:01</span></li>
                         <li>Bad Ideas and Worse Executions<span class="songtime">3:39</span></li>
@@ -73,8 +51,12 @@
                         <li>Holy Water<span class="songtime">4:50</span></li>
                     </ol>
                 </div>
-                <a href="https://open.spotify.com/album/3BAtffP7swwgUMg7xFjMs5?si=ExdZVP6dTJmg1D5qbzqIaQ" class="button-link2 punk">Spotify - Listen now!</a>
-                <a href="https://www.youtube.com/watch?v=74drkQJ_1VI&list=OLAK5uy_ngBjkvTg59q6RtB3PX8pWtAfmk1OzfEuw" class="button-link2 punk">Youtube - Listen now!</a>
+                <div class="album-links">
+                    <a href="https://open.spotify.com/album/3BAtffP7swwgUMg7xFjMs5?si=ExdZVP6dTJmg1D5qbzqIaQ"
+                        class="button-link2 punk">Listen on Spotify</a>
+                    <a href="https://www.youtube.com/watch?v=74drkQJ_1VI&list=OLAK5uy_ngBjkvTg59q6RtB3PX8pWtAfmk1OzfEuw"
+                        class="button-link2 punk">Listen on Youtube</a>
+                </div>
             </div>
         </div>
     </div>

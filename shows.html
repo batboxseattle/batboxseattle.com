@@ -10,11 +10,20 @@
     <link rel="stylesheet" href="responsive.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="scripts.js"></script>
+    <script src="hidebutton.js"></script>
 </head>
 
 <body>
     <div id="header">
         <!-- reusable header goes here-->
+    </div>
+
+    <div class="floating-widget">
+        <button id="hideButton" class="hide-button">Hide Spotify player</button>
+        <iframe id="spotifyPlayer" style="border-radius:12px"
+            src="https://open.spotify.com/embed/artist/2fejw4OmvoKdWg2lGn57ed?utm_source=generator" width="100%"
+            frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
 
     <div class="textured-background">
