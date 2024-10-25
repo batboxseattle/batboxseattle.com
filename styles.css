@@ -90,6 +90,14 @@ a:hover {
     width: 30%;
 }
 
+.footer-left p {
+    font-size: 0.9rem;
+}
+
+.footer-left img {
+    margin-bottom: 1rem;
+}
+
 .footer-right {
     display: flex;
     width: 70%;
@@ -116,8 +124,8 @@ a:hover {
 }
 
 .hide-button:hover {
-    background: rgba(0, 0, 0, 0.5);
-    color: #FF57B2;
+    background: #FF57B2;
+    color: #FFF;
     cursor: pointer;
 }
 
@@ -229,9 +237,9 @@ a.button-link2:hover {
 
 .image-container2 {
     position: relative;
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .background-image {
@@ -239,13 +247,21 @@ a.button-link2:hover {
     max-height: 1200px;
 }
 
-CSS .background-image {
+.background-image2 {
+    max-width: 100%;
+    max-height: 40vh;
+    height: auto;
+    width: auto;
+    display: block;
+}
+
+/* .background-image {
     max-height: 600px;
     width: 100%;
     height: 600px;
     object-fit: cover;
     object-position: center;
-}
+} */
 
 .overlay-image1,
 .overlay-image2 {
@@ -301,6 +317,13 @@ CSS .background-image {
 
 
 /* ====== */
+
+#tour-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .tour-component {
     display: flex;
