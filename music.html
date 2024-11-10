@@ -27,7 +27,6 @@
     </div>
 
     <div class="image-container2">
-        <img src="/media/images/26-batbox_hidive_lunniss.jpg" class="background-image2" alt="trio batbox" width="60%">
     </div>
 
     <div class="textured-background">
@@ -40,7 +39,7 @@
             </div>
             <div class="album-details-container">
                 <div class="album-title">
-                    <h2 class="punk">Punchin In</h2>
+                    <h2 class="punk">Punching In</h2>
                 </div>
                 <div class="album-description">
                     <ol>
@@ -56,10 +55,13 @@
                     </ol>
                 </div>
                 <div class="album-links">
-                    <a href="https://open.spotify.com/album/3BAtffP7swwgUMg7xFjMs5?si=ExdZVP6dTJmg1D5qbzqIaQ"
-                        class="button-link2 punk target="_blank"">Listen on Spotify</a>
+                    <a href="https://open.spotify.com/album/3BAtffP7swwgUMg7xFjMs5?si=ExdZVP6dTJmg1D5qbzqIaQ" class="button-link2 punk"
+                        target="_blank">Listen on Spotify!</a>
                     <a href="https://www.youtube.com/watch?v=74drkQJ_1VI&list=OLAK5uy_ngBjkvTg59q6RtB3PX8pWtAfmk1OzfEuw"
-                        class="button-link2 punk target="_blank"">Listen on Youtube</a>
+                        class="button-link2 punk" target="_blank">Listen on Youtube!</a>
+                </div>
+                <div class="album-links">
+                    <a href="#" class="button-link2 punk" target="_blank">Listen on Apple Music!</a>
                 </div>
             </div>
         </div>
@@ -120,6 +122,11 @@
     <div id="footer">
         <!-- reusable footer goes here-->
     </div>
+    <script type="module" src="headerimages.js"></script>
+    <script type="module">
+        import { startImageRotation } from './headerimages.js';
+        document.addEventListener('DOMContentLoaded', startImageRotation);
+    </script>
 </body>
 
 </html>

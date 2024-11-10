@@ -382,7 +382,7 @@ a.button-link2:hover {
 
 .album-title,
 .album-description {
-    max-width: 420px;
+    max-width: 500px;
 }
 
 .album-title h2 {
@@ -439,9 +439,13 @@ a.button-link2:hover {
 }
 
 ol li {
-    width: 90%;
+    width: 110%;
     line-height: 200%;
     font-size: 1.2rem;
+}
+
+ol li b {
+    color: #D3FF58;
 }
 
 ol li span.songtime {
@@ -480,7 +484,6 @@ ol li span.songtime {
     justify-content: center;
     align-items: center;
     padding: 2rem 0 2rem 0;
-    border-bottom: 1px solid white;
 }
 
 .guest-name {
