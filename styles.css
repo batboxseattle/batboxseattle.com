@@ -393,7 +393,6 @@ a.button-link2:hover {
 }
 
 .album-description ol li {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -414,9 +413,14 @@ a.button-link2:hover {
     margin-bottom: 2rem;
 }
 
-.album-image {
+.album-image-index {
     width: 100%;
     max-width: 250px;
+}
+
+.album-image-music {
+    width: 100%;
+    max-width: 500px;
 }
 
 .paragraph-container {
