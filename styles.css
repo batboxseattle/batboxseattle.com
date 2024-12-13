@@ -312,7 +312,10 @@ a.button-link2:hover {
 }
 
 .photo-background {
-    background-image: url('/media/assets/group_trevor_bg2.png');
+    background-image: url('/media/images/1-batbox_hidive_lunniss.jpg');
+    background-position: center 15%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
 }
 
 
