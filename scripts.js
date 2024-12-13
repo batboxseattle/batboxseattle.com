@@ -1,3 +1,5 @@
+import './collage-images.js';
+
 window.onload = function () {
     // Allow for random header image
     $('#footer').load('footer.html');
