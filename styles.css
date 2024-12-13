@@ -469,6 +469,10 @@ ol li span.songtime {
     margin-top: 3rem;
 }
 
+.image-collage > .ic-container:nth-child(n) img {
+    filter: brightness(75%);
+}
+
 .ic-container {
     overflow: hidden;
 }
