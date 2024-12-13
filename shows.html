@@ -1,63 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Batbox - Shows and events</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="responsive.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="scripts.js"></script>
-        <script src="hidebutton.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Batbox - Shows and events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="scripts.js" type="module"></script>
+    <script src="hidebutton.js"></script>
+</head>
 
-    <body>
-        <div id="header">
-            <!-- reusable header goes here-->
-        </div>
+<body>
+<div id="header"></div>
 
-        <div class="floating-widget">
-            <button id="hideButton" class="hide-button">Hide Spotify player</button>
-            <iframe id="spotifyPlayer" style="border-radius:12px"
-                src="https://open.spotify.com/embed/artist/2fejw4OmvoKdWg2lGn57ed?utm_source=generator" width="100%"
-                frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
+<div class="floating-widget">
+    <button id="hideButton" class="hide-button">Hide Spotify player</button>
+    <iframe id="spotifyPlayer" style="border-radius:12px"
+            src="https://open.spotify.com/embed/artist/2fejw4OmvoKdWg2lGn57ed?utm_source=generator" width="100%"
+            frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
 
-        <div class="image-container2">
-        </div>
+<div class="image-container2">
+</div>
 
-        <div class="textured-background">
-            <div class="section-divider2">
-                <h2 class="punk">Past Shows</h2>
-            </div>
+<div class="textured-background">
+    <div class="section-divider2">
+        <h2 class="punk">Past Shows</h2>
+    </div>
 
-            <div id="tour-container">
-                <!-- Dynamically populated tour components will go here -->
-            </div>
+    <div id="tour-container">
+    </div>
 
-            <div class="bottom-spacer-10"></div>
-        </div>
+    <div class="bottom-spacer-10"></div>
+</div>
 
-        <div id="footer">
-            <!-- reusable footer goes here-->
-        </div>
+<div id="footer"></div>
 
-        <script type="module" src="headerimages.js"></script>
-        <script type="module">
-            import { startImageRotation } from './headerimages.js';
-            document.addEventListener('DOMContentLoaded', startImageRotation);
-        </script>
+<script type="module" src="headerimages.js"></script>
+<script type="module">
+    import {startImageRotation} from './headerimages.js';
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                fetch('tours.json')
-                    .then(response => response.json())
-                    .then(data => {
-                        const tourContainer = document.getElementById('tour-container');
-                        data.tours.forEach(tour => {
-                            const tourComponent = `
+    document.addEventListener('DOMContentLoaded', startImageRotation);
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        fetch('tours.json')
+            .then(response => response.json())
+            .then(data => {
+                const tourContainer = document.getElementById('tour-container');
+                data.tours.forEach(tour => {
+                    const tourComponent = `
                             <div class="tour-component">
                                 <div class="tour-date punk">
                                     <h3>${tour.date}</h3>
@@ -73,11 +69,11 @@
                                 </div>
                             </div>
                             `;
-                            tourContainer.innerHTML += tourComponent;
-                        });
-                    })
-                    .catch(error => console.error('Error loading JSON:', error));
-            });
-        </script>
-    </body>
+                    tourContainer.innerHTML += tourComponent;
+                });
+            })
+            .catch(error => console.error('Error loading JSON:', error));
+    });
+</script>
+</body>
 </html>
