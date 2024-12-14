@@ -1,4 +1,6 @@
 import './collage-images.js';
+import "./hidebutton.js"
+import $ from 'jquery';
 
 window.onload = function () {
     // Allow for random header image
