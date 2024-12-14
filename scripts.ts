@@ -1,10 +1,11 @@
-import './collage-images.js';
-import "./hidebutton.js"
+
+import './collage-images.ts';
+import './hidebutton.ts';
 import $ from 'jquery';
 
-window.onload = function () {
+window.onload = (): void => {
     // Allow for random header image
     $('#footer').load('footer.html');
     $('#header').load('header.html');
     console.log('loading scripts');
-}
+};

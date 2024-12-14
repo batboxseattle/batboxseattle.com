@@ -35,41 +35,5 @@
 
 <div id="footer"></div>
 
-<script type="module" src="headerimages.js"></script>
-<script type="module">
-    import {startImageRotation} from './headerimages.js';
-
-    document.addEventListener('DOMContentLoaded', startImageRotation);
-</script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        fetch('tours.json')
-            .then(response => response.json())
-            .then(data => {
-                const tourContainer = document.getElementById('tour-container');
-                data.tours.forEach(tour => {
-                    const tourComponent = `
-                            <div class="tour-component">
-                                <div class="tour-date punk">
-                                    <h3>${tour.date}</h3>
-                                </div>
-                                <div class="tour-text">
-                                    <div class="tour-title">
-                                        <h3 class="punk">${tour.title}</h3>
-                                    </div>
-                                    <div class="tour-description">
-                                        <p>${tour.description}</p>
-                                        <a href="${tour.photosLink}" class="button-link2 punk">See Photos</a>
-                                    </div>
-                                </div>
-                            </div>
-                            `;
-                    tourContainer.innerHTML += tourComponent;
-                });
-            })
-            .catch(error => console.error('Error loading JSON:', error));
-    });
-</script>
 </body>
 </html>
