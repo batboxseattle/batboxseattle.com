@@ -1,22 +1,34 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    // Get references to the button and the element
-    const button = document.getElementById('hideButton') as HTMLButtonElement | null;
-    const spotifyPlayer = document.getElementById('spotifyPlayer') as HTMLElement | null;
+function updateButtonText(button: HTMLElement, isHidden: boolean) {
+    button.textContent = isHidden ? 'Show Spotify player' : 'Hide Spotify player';
+}
 
-    // Add a click event listener to the button
-    if (spotifyPlayer) {
-        button?.addEventListener('click', () => {
-            // Check the current display property of the element
-            console.log("testing");
-            if (spotifyPlayer?.style.display === 'none') {
-                // If it's 'none', change it to 'block'
-                spotifyPlayer.style.display = 'block';
-                button.textContent = 'Hide Spotify player';
-            } else {
-                // Otherwise, change it to 'none'
-                spotifyPlayer.style.display = 'none';
-                button.textContent = 'Show Spotify player';
-            }
-        });
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('hideButton');
+    const spotifyPlayer = document.getElementById('spotifyPlayer');
+
+    const savedState = localStorage.getItem('spotifyPlayerVisible');
+
+    if (spotifyPlayer && button) {
+        if (savedState === 'hidden') {
+            spotifyPlayer.style.display = 'none';
+            updateButtonText(button, true);
+        } else {
+            spotifyPlayer.style.display = 'block';
+            updateButtonText(button, false);
+        }
     }
+
+    button?.addEventListener('click', () => {
+        if (spotifyPlayer) {
+            if (spotifyPlayer.style.display === 'none') {
+                spotifyPlayer.style.display = 'block';
+                updateButtonText(button, false);
+                localStorage.setItem('spotifyPlayerVisible', 'visible');
+            } else {
+                spotifyPlayer.style.display = 'none';
+                updateButtonText(button, true);
+                localStorage.setItem('spotifyPlayerVisible', 'hidden');
+            }
+        }
+    });
 });

@@ -1,5 +1,16 @@
+const IMAGES_PER_COLLAGE = 4;
 
-function shuffleArray(array: any[]): any[] {
+type NormalizedImage = {
+    src: string;
+    normalizedWidth: number;
+}
+
+type Dimensions = {
+    width: number;
+    height: number;
+}
+
+function shuffleArray<T>(array: T[]): T[] {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
@@ -7,26 +18,44 @@ function shuffleArray(array: any[]): any[] {
     return array;
 }
 
-export async function loadRandomImages() {
-    const response = await fetch("collage-images.json");
-    const data: { images: string[] } = await response.json();
-    const images: string[] = shuffleArray(data.images);
+function getImageDimensions(imageUrl: string): Promise<Dimensions> {
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = imageUrl;
+        img.onload = () => {
+            resolve({width: img.width, height: img.height});
+        };
+        img.onerror = () => {
+            reject(new Error(`Failed to load image: ${imageUrl}`));
+        };
+    });
+}
 
-    document.querySelectorAll<HTMLDivElement>(".image-collage").forEach((imageCollage, index) => {
+export async function loadRandomImages() {
+    const data: { images: string[] } = await (await fetch("collage-images.json")).json();
+    const imageFileNames = shuffleArray(data.images);
+
+    for (const [index, imageCollage] of Array.from(document.querySelectorAll<HTMLDivElement>(".image-collage")).entries()) {
         imageCollage.innerHTML = "";
 
-        images.slice(index * 4, index * 4 + 4).forEach(image => {
-            const imageContainer: HTMLDivElement = document.createElement("div");
-            imageContainer.classList.add("ic-container");
+        const images: NormalizedImage[] = await Promise.all(
+            imageFileNames.slice(index * IMAGES_PER_COLLAGE, index * IMAGES_PER_COLLAGE + IMAGES_PER_COLLAGE).map(async (fileName) => {
+                const imageUrl = `/media/collage-images/${fileName}`;
+                const {width, height} = await getImageDimensions(imageUrl);
+                return {src: imageUrl, normalizedWidth: width / height};
+            })
+        )
 
-            const imgElement: HTMLImageElement = document.createElement("img");
-            imgElement.src = `/media/collage-images/${image}`;
-            imgElement.alt = "Random image";
+        const totalNormalizedWidth = images.reduce((sum, img) => sum + img.normalizedWidth, 0);
 
-            imageContainer.appendChild(imgElement);
-            imageCollage.appendChild(imageContainer);
-        });
-    })
+        for (const image of images) {
+            const img = document.createElement("img");
+            img.src = image.src;
+            img.alt = "Photo of Batbox performing onstage.";
+            img.style.width = `${(image.normalizedWidth / totalNormalizedWidth) * 100}%`
+            imageCollage.appendChild(img);
+        }
+    }
 }
 
 document.addEventListener("DOMContentLoaded", () => loadRandomImages().catch(console.error));

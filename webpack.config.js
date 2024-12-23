@@ -6,6 +6,7 @@ module.exports = (env, argv) => {
         output: {
             filename: 'scripts.js',
             path: path.resolve(__dirname, 'dist'),
+            publicPath: '/dist/',
         },
         mode: argv.mode,
         module: {
@@ -24,6 +25,7 @@ module.exports = (env, argv) => {
             static: {
                 directory: __dirname,
             },
+            hot: true,
         },
     };
 };
