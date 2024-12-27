@@ -1,133 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Batbox</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="dist/scripts.js" type="module"></script>
-</head>
+  </head>
 
-<body>
-<div id="header" class="sticky-nav"></div>
+  <body>
+    <div id="header" class="sticky-nav"></div>
 
-<div class="image-container">
-    <img src="/media/images/345A6132.jpg" alt="trio batbox" style="display: block; width: 100%; height: auto;">
-    <img src="/media/assets/test_imagecolor1.png" alt="colortest1" class="overlay-image"
-         style="position: absolute; top: 18%; left: 30%; width: 40%;">
-    <a href="https://open.spotify.com/artist/2fejw4OmvoKdWg2lGn57ed?si=xgBpbuiPT8O5hundnVKXrg" target="_blank">
-        <img src="/media/assets/test_imagecolor3.png" alt="colortest2" class="overlay-image"
-             style="position: absolute; top: 65%; left: 37%; width: 23%;">
-    </a>
-</div>
+    <div class="image-container">
+      <img
+        src="/media/images/345A6132.jpg"
+        alt="trio batbox"
+        style="display: block; width: 100%; height: auto" />
+      <img
+        src="/media/assets/test_imagecolor1.png"
+        alt="colortest1"
+        class="overlay-image"
+        style="position: absolute; top: 18%; left: 30%; width: 40%" />
+      <a
+        href="https://open.spotify.com/artist/2fejw4OmvoKdWg2lGn57ed?si=xgBpbuiPT8O5hundnVKXrg"
+        target="_blank">
+        <img
+          src="/media/assets/test_imagecolor3.png"
+          alt="colortest2"
+          class="overlay-image"
+          style="position: absolute; top: 65%; left: 37%; width: 23%" />
+      </a>
+    </div>
 
-<div class="floating-widget">
-    <button id="hideButton" class="hide-button">Hide Spotify player</button>
-    <iframe id="spotifyPlayer"
-            src="https://open.spotify.com/embed/artist/2fejw4OmvoKdWg2lGn57ed?utm_source=generator"
-            allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"></iframe>
-</div>
+    <div class="floating-widget">
+      <button id="hideButton" class="hide-button">Hide Spotify player</button>
+      <iframe
+        id="spotify-player"
+        src="https://open.spotify.com/embed/artist/2fejw4OmvoKdWg2lGn57ed?utm_source=generator"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"></iframe>
+    </div>
 
-<div class="textured-background">
-    <div class="section-divider">
+    <div class="textured-background">
+      <div class="section-divider">
         <h2 class="punk section-style-1">Featured video</h2>
-    </div>
+      </div>
 
-    <div class="video-container">
+      <div class="video-container">
         <div class="video-wrapper">
-            <iframe
-                    class="youtubeplayer"
-                    src="https://www.youtube.com/embed/wzXQlJN57DY?si=UqPChMFLuu7TjID0&rel=0&modestbranding=1"
-                    title="Batbox - Featured Video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    aria-label="Embedded video for Batbox - Featured Video"
-                    allowfullscreen>
-            </iframe>
+          <iframe
+            class="youtubeplayer"
+            src="https://www.youtube.com/embed/wzXQlJN57DY?si=UqPChMFLuu7TjID0&rel=0&modestbranding=1"
+            title="Batbox - Featured Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            aria-label="Embedded video for Batbox - Featured Video"
+            allowfullscreen></iframe>
         </div>
+      </div>
+
+      <a href="/music.html#videos" class="section-button button-link punk">
+        See all videos
+      </a>
+
+      <div class="bottom-spacer-7"></div>
     </div>
 
-    <a href="/music.html#videos" class="section-button button-link punk">See all videos</a>
+    <div class="image-collage"></div>
 
-    <div class="bottom-spacer-7"></div>
-</div>
-
-<div class="image-collage"></div>
-
-<div class="textured-background">
-    <div class="section-divider">
+    <div class="textured-background">
+      <div class="section-divider">
         <h2 class="punk section-style-2">Come see us play</h2>
-    </div>
-    <div class="show-container">
-        <img src="/media/assets/2025-01-10 flyer (print).png" alt="Flyer for upcoming show." class="show-flyer">
+      </div>
+      <div class="show-container">
+        <img
+          src="/media/assets/2025-01-10 flyer (print).png"
+          alt="Flyer for upcoming show."
+          class="show-flyer" />
 
         <div class="show-details">
-            <h2 class="punk">Mister Blank w/ Without a Doubt, Batbox</h2>
-            <p>Fri, Jan 10, 2025 at 08:00 PM PST<br>High Dive, Seattle, WA</p>
-            <a href="https://www.tixr.com/groups/highdive/events/mister-blank-w-without-a-doubt-batbox-119643"
-               class="button-link punk">Learn more</a>
+          <h2 class="punk">Mister Blank w/ Without a Doubt, Batbox</h2>
+          <p>
+            Fri, Jan 10, 2025 at 08:00 PM PST
+            <br />
+            High Dive, Seattle, WA
+          </p>
+          <a
+            href="https://www.tixr.com/groups/highdive/events/mister-blank-w-without-a-doubt-batbox-119643"
+            class="button-link punk">
+            Learn more
+          </a>
         </div>
+      </div>
+
+      <a href="/shows.html" class="section-button button-link punk">
+        See all shows
+      </a>
+
+      <div class="bottom-spacer-7"></div>
     </div>
 
-    <a href="/shows.html" class="section-button button-link punk">See all shows</a>
-
-    <div class="bottom-spacer-7"></div>
-</div>
-
-<div class="photo-background">
-    <div class="section-divider">
+    <div class="photo-background">
+      <div class="section-divider">
         <h2 class="punk section-style-1">Latest Music</h2>
-    </div>
-    <div class="album-container">
-        <img src="/media/assets/punchingin_albumart.jpg" alt="trio batbox" class="album-image">
+      </div>
+      <div class="album-container">
+        <img
+          src="/media/assets/punchingin_albumart.jpg"
+          alt="trio batbox"
+          class="album-image" />
         <div class="album-details">
-            <h2 class="punk">Punching In</h2>
-            <p>Released on July 23, 2021</p>
-            <h2 class="punk">
-                <a href="https://open.spotify.com/album/3BAtffP7swwgUMg7xFjMs5?si=xwzzq-AyTLC1z4xRLaKu4w"
-                   target="_blank"><i
-                        class="fa-brands fa-spotify"></i></a>
-                <a href="https://www.youtube.com/watch?v=74drkQJ_1VI&list=OLAK5uy_ngBjkvTg59q6RtB3PX8pWtAfmk1OzfEuw"
-                   target="_blank"><i
-                        class="fa-brands fa-youtube"></i></a>
-                <a href="https://music.apple.com/us/album/punching-in/1578284928" target="_blank"><i
-                        class="fa-brands fa-itunes-note"></i></a>
-            </h2>
+          <h2 class="punk">Punching In</h2>
+          <p>Released on July 23, 2021</p>
+          <h2 class="punk">
+            <a
+              href="https://open.spotify.com/album/3BAtffP7swwgUMg7xFjMs5?si=xwzzq-AyTLC1z4xRLaKu4w"
+              target="_blank">
+              <i class="fa-brands fa-spotify"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=74drkQJ_1VI&list=OLAK5uy_ngBjkvTg59q6RtB3PX8pWtAfmk1OzfEuw"
+              target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a
+              href="https://music.apple.com/us/album/punching-in/1578284928"
+              target="_blank">
+              <i class="fa-brands fa-itunes-note"></i>
+            </a>
+          </h2>
         </div>
+      </div>
+
+      <a href="/music.html" class="section-button button-link punk">
+        See all music
+      </a>
+
+      <div class="bottom-spacer-7"></div>
     </div>
 
-    <a href="/music.html" class="section-button button-link punk">See all music</a>
-
-    <div class="bottom-spacer-7"></div>
-</div>
-
-<div class="textured-background">
-    <div class="section-divider">
+    <div class="textured-background">
+      <div class="section-divider">
         <h2 class="punk section-style-2">About Batbox</h2>
-    </div>
-    <div class="paragraph-container">
+      </div>
+      <div class="paragraph-container">
         <p>
-            Many phrases have been used to describe Batbox over the years: “your mom’s favorite band,” “probably the
-            best three-piece alt-rock/punk/indie/blues fusion featuring trumpet, violin, euphonium, ukulele, and
-            synthesizer this side of The International Date Line,” and [THIRD THING HERE]. But from all of these, one
-            thing is clear: they probably are a band. Since their founding in 2017, Batbox has been playing festivals
-            and touring up and down the PNW, pissing off local politicians along the way.
+          Many phrases have been used to describe Batbox over the years: “your
+          mom’s favorite band,” “probably the best three-piece
+          alt-rock/punk/indie/blues fusion featuring trumpet, violin, euphonium,
+          ukulele, and synthesizer this side of The International Date Line,”
+          and [THIRD THING HERE]. But from all of these, one thing is clear:
+          they probably are a band. Since their founding in 2017, Batbox has
+          been playing festivals and touring up and down the PNW, pissing off
+          local politicians along the way.
         </p>
         <p>
-            They dropped their first studio album in 2021, spitting mad rhymes about topics including politics,
-            relationships, and post-post-post-modern queerness in The West. Batbox is currently accepting booking
-            requests via DM, email, telepathy, inception, summoning rituals, or by yelling really really loud.
+          They dropped their first studio album in 2021, spitting mad rhymes
+          about topics including politics, relationships, and
+          post-post-post-modern queerness in The West. Batbox is currently
+          accepting booking requests via DM, email, telepathy, inception,
+          summoning rituals, or by yelling really really loud.
         </p>
         <div class="bottom-spacer-7"></div>
+      </div>
     </div>
-</div>
 
-<div class="image-collage"></div>
+    <div class="image-collage"></div>
 
-<div id="footer"></div>
-</body>
-
+    <div id="footer"></div>
+  </body>
 </html>

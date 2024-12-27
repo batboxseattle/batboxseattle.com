@@ -1,39 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Batbox - Shows and events</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="dist/scripts.js" type="module"></script>
-</head>
+  </head>
 
-<body>
-<div id="header"></div>
+  <body>
+    <div id="header"></div>
 
-<div class="floating-widget">
-    <button id="hideButton" class="hide-button">Hide Spotify player</button>
-    <iframe id="spotifyPlayer" style="border-radius:12px"
-            src="https://open.spotify.com/embed/artist/2fejw4OmvoKdWg2lGn57ed?utm_source=generator" width="100%"
-            frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
+    <div class="floating-widget">
+      <button id="hideButton" class="hide-button">Hide Spotify player</button>
+      <iframe
+        id="spotify-player"
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/artist/2fejw4OmvoKdWg2lGn57ed?utm_source=generator"
+        width="100%"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"></iframe>
+    </div>
 
-<div class="textured-background">
-    <div class="section-divider2">
+    <div class="textured-background">
+      <div class="section-divider2">
         <h2 class="punk">Past Shows</h2>
+      </div>
+
+      <div id="tour-container"></div>
+
+      <div class="bottom-spacer-10"></div>
     </div>
 
-    <div id="tour-container">
-    </div>
+    <div class="image-collage"></div>
 
-    <div class="bottom-spacer-10"></div>
-</div>
-
-<div class="image-collage"></div>
-
-<div id="footer"></div>
-
-</body>
+    <div id="footer"></div>
+  </body>
 </html>

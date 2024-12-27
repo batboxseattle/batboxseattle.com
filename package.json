@@ -4,16 +4,26 @@
   "description": "batboxseattle.com",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development",
+    "style-check": "status=0; for command in 'prettier --check **/*.{css,html,js,json,md,mjs,ts,yml}' eslint htmlhint 'stylelint **/*.css'; do eval $command || status=1; done; exit $status",
+    "style-fix": "status=0; for command in 'prettier --write **/*.{css,html,js,json,md,mjs,ts,yml}' 'eslint --fix' 'stylelint --fix **/*.css'; do eval $command || status=1; done; exit $status"
   },
   "dependencies": {
     "@types/jquery": "^3.5.32",
     "jquery": "^3.7.1"
   },
   "devDependencies": {
+    "@eslint/js": "^9.17.0",
     "@types/node": "^22.10.2",
+    "eslint": "^9.17.0",
+    "globals": "^15.14.0",
+    "htmlhint": "^1.1.4",
+    "prettier": "^3.4.2",
+    "stylelint": "^16.12.0",
+    "stylelint-config-standard": "^36.0.1",
     "ts-loader": "^9.5.1",
     "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.1",
     "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.2.0"
