@@ -6,7 +6,8 @@
     "build": "webpack --mode production",
     "start": "webpack serve --mode development",
     "style-check": "status=0; for command in 'prettier --check **/*.{css,html,js,json,md,mjs,ts,yml}' eslint htmlhint 'stylelint **/*.css'; do eval $command || status=1; done; exit $status",
-    "style-fix": "status=0; for command in 'prettier --write **/*.{css,html,js,json,md,mjs,ts,yml}' 'eslint --fix' 'stylelint --fix **/*.css'; do eval $command || status=1; done; exit $status"
+    "style-fix": "status=0; for command in 'prettier --write **/*.{css,html,js,json,md,mjs,ts,yml}' 'eslint --fix' 'stylelint --fix **/*.css'; do eval $command || status=1; done; exit $status",
+    "prepare": "husky"
   },
   "dependencies": {
     "@types/jquery": "^3.5.32",
@@ -18,6 +19,7 @@
     "eslint": "^9.17.0",
     "globals": "^15.14.0",
     "htmlhint": "^1.1.4",
+    "husky": "^9.1.7",
     "prettier": "^3.4.2",
     "stylelint": "^16.12.0",
     "stylelint-config-standard": "^36.0.1",
