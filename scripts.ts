@@ -1,10 +1,11 @@
 import "./collage-images.ts";
-import "./hidebutton.ts";
+import { initializeHideButton } from "./hide-button";
 import $ from "jquery";
 
 window.onload = (): void => {
-  // Allow for random header image
   $("#footer").load("footer.html");
   $("#header").load("header.html");
-  console.log("loading scripts");
+  $("#spotify-widget").load("spotify-widget.html", () => {
+    initializeHideButton();
+  });
 };

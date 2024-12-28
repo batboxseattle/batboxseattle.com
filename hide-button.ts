@@ -2,7 +2,7 @@ function updateButtonText(button: HTMLElement, isHidden: boolean) {
   button.textContent = isHidden ? "Show Spotify player" : "Hide Spotify player";
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+export function initializeHideButton() {
   const button = document.getElementById("hideButton");
   const spotifyPlayer = document.getElementById("spotify-player");
 
@@ -31,4 +31,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
-});
+}
