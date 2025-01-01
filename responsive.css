@@ -91,7 +91,7 @@
 
   /* } */
 
-  .youtubeplayer {
+  .youtube-player {
     width: 100%;
   }
 }
@@ -182,7 +182,7 @@
 
   /* } */
 
-  .youtubeplayer {
+  .youtube-player {
     width: 100%;
   }
 }
@@ -232,7 +232,7 @@
   /*    height: 200px; */
 
   /* } */
-  .youtubeplayer {
+  .youtube-player {
     height: 35vh;
   }
 }
@@ -261,7 +261,7 @@
     font-size: 1.7rem;
   }
 
-  .youtubeplayer {
+  .youtube-player {
     height: 45vh;
   }
 }
@@ -301,7 +301,7 @@
     width: 60%;
   }
 
-  .youtubeplayer {
+  .youtube-player {
     height: 50vh;
   }
 }

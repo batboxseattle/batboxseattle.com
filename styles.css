@@ -51,6 +51,7 @@ h3 {
 a {
   color: white;
   padding: 2px 4px;
+  text-decoration: none;
 }
 
 a:hover {
@@ -71,11 +72,9 @@ a:hover {
 .header-nav a {
   font-size: 2rem;
   color: white;
-  text-decoration: none;
 }
 
 .footer-nav a {
-  text-decoration: none;
   font-size: 2rem;
   color: white;
   word-wrap: break-word;
@@ -158,16 +157,6 @@ a:hover {
   background: #ff57b2;
   color: #fff;
   cursor: pointer;
-}
-
-.youtubeplayer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  margin: 0;
 }
 
 a.button-link {
@@ -412,6 +401,7 @@ ol li {
   width: 110%;
   line-height: 200%;
   font-size: 1.2rem;
+  text-wrap: nowrap;
 }
 
 .album-description ol li {
@@ -518,14 +508,35 @@ a.image-link:hover {
   width: 80%;
 }
 
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-}
-
 #spotify-player {
   width: 100%;
   border-radius: 1rem;
   border: none;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-sizing: border-box;
+  gap: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+}
+
+.youtube-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
 }
