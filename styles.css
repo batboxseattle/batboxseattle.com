@@ -466,6 +466,7 @@ ol li span.songtime {
 
 .image-collage img {
   object-fit: cover;
+  filter: brightness(75%);
 }
 
 .guest-component {
