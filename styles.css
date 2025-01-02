@@ -50,7 +50,6 @@ h3 {
 
 a {
   color: white;
-  padding: 2px 4px;
   text-decoration: none;
 }
 
@@ -71,11 +70,13 @@ a:hover {
 
 .header-nav a {
   font-size: 3rem;
+  padding: 0.5rem 1rem;
   color: white;
 }
 
 .footer-nav a {
   font-size: 2rem;
+  padding: 0 0.5rem;
   color: white;
   word-wrap: break-word;
 }
@@ -84,8 +85,25 @@ a:hover {
   padding: 0;
 }
 
+.header-nav-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.album-details a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
 .header-nav a:hover {
   background-color: #000;
+}
+
+.header-nav-links a:hover {
+  background-color: #c3066b;
 }
 
 .footer-right-col a:hover,
@@ -94,8 +112,14 @@ a:hover {
   background: none;
 }
 
-.header-nav .header-nav-links a:hover {
-  background-color: #c3066b;
+.header-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav-links a i {
+  display: inline-block;
 }
 
 .content-container {
@@ -541,4 +565,11 @@ a.image-link:hover {
   height: 100%;
   border: none;
   margin: 0;
+}
+
+.logo {
+  min-height: 0;
+  max-height: 100%;
+  height: auto;
+  width: auto;
 }
