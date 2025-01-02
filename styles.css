@@ -40,7 +40,7 @@ p {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 1rem 0 0;
 }
 
@@ -70,7 +70,7 @@ a:hover {
 }
 
 .header-nav a {
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
 }
 
@@ -141,6 +141,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  font-size: 1rem;
 }
 
 .hide-button {
@@ -161,7 +162,7 @@ a:hover {
 
 a.button-link {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding: 6px 12px;
   margin-bottom: 1rem;
   background-color: white;
