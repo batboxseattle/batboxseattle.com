@@ -92,6 +92,14 @@ function createSpacerElement(): HTMLElement {
 }
 
 async function populateShows() {
+  const upcomingShowsContainer = document.getElementById("upcoming-shows");
+  const pastShowsContainer = document.getElementById("past-shows");
+
+  if (!upcomingShowsContainer && !pastShowsContainer) {
+    // don't run at all if there aren't any containers to put shows into
+    return;
+  }
+
   const shows = SHOWS_SCHEMA.parse(
     await (await fetch("/shows.json")).json(),
   ).shows;
@@ -107,9 +115,6 @@ async function populateShows() {
     (show1, show2) =>
       show2.startDate.date.getTime() - show1.startDate.date.getTime(),
   );
-
-  const upcomingShowsContainer = document.getElementById("upcoming-shows");
-  const pastShowsContainer = document.getElementById("past-shows");
 
   shows.forEach((show) => {
     if (isAfter(show.startDate.date, now)) {
