@@ -312,6 +312,9 @@ a.button-link:hover {
 
 .textured-background {
   background-image: url("/media/assets/texture-background.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat-y; /* This will tile the background image vertically */
   height: fit-content;
 }
 
