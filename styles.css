@@ -226,6 +226,7 @@ a.button-link:hover {
   margin-bottom: 2rem;
   display: inline-block;
   white-space: nowrap;
+  text-wrap: auto;
 }
 
 .section-divider h2 {
