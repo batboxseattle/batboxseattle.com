@@ -35,7 +35,7 @@ body {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 120%;
 }
 
@@ -523,7 +523,7 @@ ol li span.songtime {
 
 .member-pronouns {
   font-family: "Courier New", Courier, monospace;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 120%;
   letter-spacing: normal;
   font-weight: normal;
