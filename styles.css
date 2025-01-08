@@ -76,7 +76,6 @@ a:hover {
 
 .footer-nav a {
   font-size: 2rem;
-  padding: 0 0.5rem;
   color: white;
   word-wrap: break-word;
 }
@@ -90,6 +89,10 @@ a:hover {
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
+}
+
+.text-link {
+  padding: 0 0.5rem;
 }
 
 .header-nav a:hover {
