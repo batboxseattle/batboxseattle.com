@@ -1,2 +1,7 @@
+added_files=$(git diff --name-only --cached --diff-filter=d)
+
 npm run style-fix
+
+git add ${added_files}
+
 npm run style-check
