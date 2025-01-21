@@ -5,6 +5,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css");
 @import url("responsive.css");
+@import url("node_modules/swiper/swiper-bundle.css");
 
 @font-face {
   font-family: RookiePunk;
@@ -54,7 +55,7 @@ a {
 }
 
 a:hover {
-  background-color: #c3066b;
+  background-color: #ff57b2;
 }
 
 .header-nav,
@@ -107,7 +108,7 @@ a:hover {
 }
 
 .header-nav-links a:hover {
-  background-color: #c3066b;
+  background-color: #ff57b2;
 }
 
 .footer-right-col a:hover,
@@ -199,7 +200,7 @@ a.button-link {
 }
 
 a.button-link:hover {
-  background-color: #c3066b;
+  background-color: #ff57b2;
   color: white;
 }
 
@@ -431,15 +432,9 @@ a.button-link:hover {
 }
 
 ol li {
-  width: 110%;
-  line-height: 200%;
-  font-size: 1.2rem;
   text-wrap: nowrap;
-}
-
-.album-description ol li {
-  justify-content: space-between;
-  align-items: center;
+  font-size: 1.5rem;
+  line-height: 120%;
 }
 
 .album-links {
@@ -481,10 +476,6 @@ ol li {
   margin-top: 2rem;
   width: 45%;
   height: 30vh;
-}
-
-ol li b {
-  color: #d3ff58;
 }
 
 ol li span.songtime {
@@ -551,7 +542,7 @@ a.image-link:hover {
   width: 80%;
 }
 
-#spotify-player {
+.spotify-player {
   width: 100%;
   border-radius: 1rem;
   border: none;
@@ -591,9 +582,100 @@ a.image-link:hover {
 }
 
 blockquote {
-  border-left: 0.2rem solid #ff57b2;
   padding-left: 1rem;
   font-style: italic;
   margin-left: 0;
   margin-right: 0;
+}
+
+.blockquote-divider {
+  border-bottom: 0.05rem solid #ff57b2;
+  width: 100%;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-container-left {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: start;
+  align-items: start;
+}
+
+.quote-container-center {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.stream-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.stream-player {
+  flex: 1 1 30rem;
+  height: 30rem;
+  border: none;
+}
+
+.swiper {
+  width: 80%;
+  aspect-ratio: 16 / 9;
+}
+
+.swiper-slide {
+  top: 0;
+  left: 0;
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ff57b2;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #d3ff58;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  padding: 1rem;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #ff57b2;
+}
+
+.download-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  z-index: 20; /* must be higher than all of the Swiper elements */
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
 }
