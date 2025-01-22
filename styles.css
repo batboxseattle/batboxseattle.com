@@ -555,8 +555,15 @@ a.image-link:hover {
   padding: 0 5%;
 }
 
-.youtube-player {
+.video-grid-item {
   flex: 1 1 30rem;
+}
+
+.featured-video {
+  width: 100%;
+}
+
+.youtube-player {
   aspect-ratio: 16 / 9;
   border: none;
 }
