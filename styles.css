@@ -4,7 +4,6 @@
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css");
-@import url("responsive.css");
 @import url("node_modules/swiper/swiper-bundle.css");
 
 @font-face {
@@ -33,6 +32,14 @@ body {
 .punk {
   font-family: RookiePunk, sans-serif;
   letter-spacing: 0.1em;
+}
+
+.icon-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  letter-spacing: normal;
 }
 
 p {
@@ -80,6 +87,7 @@ a:hover {
 .header-nav {
   width: 100%;
   align-items: center;
+  padding: 1rem 0;
 }
 
 .sticky-nav {
@@ -89,7 +97,7 @@ a:hover {
   background-color: black;
 }
 
-.header-nav a {
+.header-link {
   font-size: 3rem;
   padding: 0.5rem 1rem;
   color: white;
@@ -105,39 +113,32 @@ a:hover {
   padding: 0;
 }
 
-.icon-link {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
-}
-
 .text-link {
   padding: 0 0.5rem;
 }
 
-.header-nav a:hover {
-  background-color: #000;
-}
-
-.header-nav-links a:hover {
-  background-color: #ff57b2;
-}
-
-.footer-right-col a:hover,
-.header-nav-links.social a:hover {
+.footer-right-col a:hover {
   color: #ff57b2;
   background: none;
 }
 
-.header-nav-links {
+.header-link:hover {
+  background-color: #ff57b2;
+}
+
+.header-link-group {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.header-nav-links a i {
+.header-link-group a i {
   display: inline-block;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
 }
 
 .content-container {
@@ -166,8 +167,14 @@ a:hover {
   width: 100%;
 }
 
-.footer-left p {
-  font-size: 0.9rem;
+.footer-left p,
+.footer-right p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.footer-left .logo {
+  padding-bottom: 1rem;
 }
 
 .footer-right {
@@ -216,7 +223,7 @@ a.button-link:hover {
   color: white;
 }
 
-.header-nav-links,
+.header-link-group,
 .footer-nav-links {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -444,7 +451,6 @@ a.button-link:hover {
 }
 
 ol li {
-  text-wrap: nowrap;
   font-size: 1.5rem;
   line-height: 120%;
 }
@@ -474,6 +480,7 @@ ol li {
   text-align: left;
   padding-left: 25%;
   padding-right: 25%;
+  overflow-wrap: anywhere;
 }
 
 .video-2col {
@@ -578,13 +585,6 @@ a.image-link:hover {
 .youtube-player {
   aspect-ratio: 16 / 9;
   border: none;
-}
-
-.logo {
-  min-height: 0;
-  max-height: 100%;
-  height: auto;
-  width: auto;
 }
 
 .spotify-playlist-grid {
@@ -696,4 +696,34 @@ blockquote {
   z-index: 20; /* must be higher than all of the Swiper elements */
   font-size: 2rem;
   padding: 1rem;
+}
+
+.hamburger-menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: fit-content;
+  margin-left: auto;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.hamburger-menu.hide {
+  display: flex; /* we have a custom hiding solution for the hamburger menu */
 }
