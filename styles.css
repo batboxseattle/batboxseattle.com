@@ -54,6 +54,19 @@ a {
   text-decoration: none;
 }
 
+button {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  line-height: 120%;
+  letter-spacing: normal;
+  font-weight: normal;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
 a:hover {
   background-color: #ff57b2;
 }
@@ -186,7 +199,6 @@ a:hover {
 .hide-button:hover {
   background: #ff57b2;
   color: #fff;
-  cursor: pointer;
 }
 
 a.button-link {
@@ -684,5 +696,4 @@ blockquote {
   z-index: 20; /* must be higher than all of the Swiper elements */
   font-size: 2rem;
   padding: 1rem;
-  cursor: pointer;
 }
