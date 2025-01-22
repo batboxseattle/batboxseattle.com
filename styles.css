@@ -229,16 +229,8 @@ a.button-link:hover {
   margin-right: 1rem;
 }
 
-.bottom-spacer-3 {
-  height: 3vh;
-}
-
-.bottom-spacer-7 {
+.spacer {
   height: 7vh;
-}
-
-.bottom-spacer-10 {
-  height: 10vh;
 }
 
 .section-divider {
