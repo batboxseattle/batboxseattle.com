@@ -3,7 +3,7 @@ function updateButtonText(button: HTMLElement, isHidden: boolean) {
 }
 
 export function initializeHideButton() {
-  const button = document.getElementById("hideButton");
+  const button = document.getElementById("hide-button");
   const spotifyPlayer = document.getElementById("spotify-player");
 
   const savedState = localStorage.getItem("spotifyPlayerVisible");
