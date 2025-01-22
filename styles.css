@@ -2,8 +2,7 @@
 
 /* !* TODO can we use node_modules here? *! */
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css");
+@import url("/node_modules/@fortawesome/fontawesome-free/css/all.min.css");
 @import url("node_modules/swiper/swiper-bundle.css");
 
 @font-face {
