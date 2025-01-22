@@ -1,7 +1,7 @@
-import "./collage-images.ts";
+import "./collage-images";
 import { initializeHideButton } from "./hide-button";
 import $ from "jquery";
-import "./shows.ts";
+import "./shows";
 import "./initialize-swiper";
 import {
   initializeHamburgerMenuButton,
