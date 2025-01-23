@@ -1,7 +1,7 @@
 import $ from "jquery";
 
 window.addEventListener("load", () => {
-  $("#header").load("header.html", () => {
+  $("#header").load("header/header.html", () => {
     setUpHeader();
   });
 });

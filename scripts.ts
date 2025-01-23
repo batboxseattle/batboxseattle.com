@@ -3,7 +3,7 @@ import { initializeHideButton } from "./hide-button";
 import $ from "jquery";
 import "./shows";
 import "./initialize-swiper";
-import "./header";
+import "./header/header";
 
 window.addEventListener("load", () => {
   $("#footer").load("footer.html");
