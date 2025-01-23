@@ -1,8 +1,16 @@
+import $ from "jquery";
+
+window.addEventListener("load", () => {
+  $("#spotify-widget").load("spotify-widget/spotify-widget.html", () => {
+    initializeHideButton();
+  });
+});
+
 function updateButtonText(button: HTMLElement, isHidden: boolean) {
   button.textContent = isHidden ? "Show Spotify player" : "Hide Spotify player";
 }
 
-export function initializeHideButton() {
+function initializeHideButton() {
   const button = document.getElementById("hide-button");
   const spotifyPlayer = document.getElementById("spotify-player");
 
