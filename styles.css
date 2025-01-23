@@ -1,9 +1,10 @@
-/* !* Main CSS page for Batbox Seattle website *! */
-
-/* !* TODO can we use node_modules here? *! */
-
 @import url("/node_modules/@fortawesome/fontawesome-free/css/all.min.css");
 @import url("node_modules/swiper/swiper-bundle.css");
+
+:root {
+  --primary-color: #ff57b2;
+  --secondary-color: #d3ff58;
+}
 
 @font-face {
   font-family: RookiePunk;
@@ -21,11 +22,6 @@ body {
   background-color: black;
   color: white;
   font-family: "Courier New", Courier, monospace;
-}
-
-#header,
-#footer {
-  background-color: #000;
 }
 
 .punk {
@@ -74,19 +70,16 @@ button {
 }
 
 a:hover {
-  background-color: #ff57b2;
+  background-color: var(--primary-color);
 }
 
-.header-nav,
 .footer-nav {
   display: flex;
   justify-content: space-between;
-}
-
-.header-nav {
-  width: 100%;
-  align-items: center;
-  padding: 1rem 0;
+  padding: 1rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 1rem;
 }
 
 .sticky-nav {
@@ -94,12 +87,6 @@ a:hover {
   top: 0;
   z-index: 999;
   background-color: black;
-}
-
-.header-link {
-  font-size: 3rem;
-  padding: 0.5rem 1rem;
-  color: white;
 }
 
 .footer-nav a {
@@ -117,42 +104,14 @@ a:hover {
 }
 
 .footer-right-col a:hover {
-  color: #ff57b2;
+  color: var(--primary-color);
   background: none;
-}
-
-.header-link:hover {
-  background-color: #ff57b2;
-}
-
-.header-link-group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header-link-group a i {
-  display: inline-block;
-}
-
-.header-links {
-  display: flex;
-  align-items: center;
 }
 
 .content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.footer-nav {
-  padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  justify-content: space-between;
-  gap: 1rem;
 }
 
 .footer-left {
@@ -203,8 +162,8 @@ a:hover {
 }
 
 .hide-button:hover {
-  background: #ff57b2;
-  color: #fff;
+  background: var(--primary-color);
+  color: white;
 }
 
 a.button-link {
@@ -218,11 +177,10 @@ a.button-link {
 }
 
 a.button-link:hover {
-  background-color: #ff57b2;
+  background-color: var(--primary-color);
   color: white;
 }
 
-.header-link-group,
 .footer-nav-links {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -251,12 +209,12 @@ a.button-link:hover {
 }
 
 .section-style-1 {
-  background-color: #ff57b2;
+  background-color: var(--primary-color);
   color: white;
 }
 
 .section-style-2 {
-  background-color: #d3ff58;
+  background-color: var(--secondary-color);
   color: black;
 }
 
@@ -599,7 +557,7 @@ blockquote {
 }
 
 .blockquote-divider {
-  border-bottom: 0.05rem solid #ff57b2;
+  border-bottom: 0.05rem solid var(--primary-color);
   width: 100%;
 }
 
@@ -660,12 +618,12 @@ blockquote {
 }
 
 .swiper-pagination-bullet {
-  background-color: #ff57b2;
+  background-color: var(--primary-color);
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background: #d3ff58;
+  background: var(--secondary-color);
 }
 
 .swiper-button-prev,
@@ -676,7 +634,7 @@ blockquote {
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background-color: #ff57b2;
+  background-color: var(--primary-color);
 }
 
 .download-button {
@@ -689,32 +647,6 @@ blockquote {
   padding: 1rem;
 }
 
-.hamburger-menu-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-.hamburger-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: fit-content;
-  margin-left: auto;
-  transition: max-height 0.3s ease-in-out;
-  max-height: 0;
-  overflow: hidden;
-}
-
 .hide {
-  display: none;
-}
-
-.hamburger-menu.hide {
-  display: flex; /* we have a custom hiding solution for the hamburger menu */
+  display: none !important;
 }

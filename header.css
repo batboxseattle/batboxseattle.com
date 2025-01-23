@@ -1,0 +1,50 @@
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.header-link-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.header-link {
+  font-size: 3rem;
+  padding: 0.5rem 1rem;
+}
+
+.hamburger-menu-button {
+  font-size: 2rem;
+}
+
+.hamburger-menu {
+  max-height: 0; /* hidden by default */
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.hamburger-menu.hide {
+  display: flex !important; /* we have a custom hiding solution for the hamburger menu */
+}
+
+.hamburger-menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: fit-content;
+  margin-left: auto;
+  padding-bottom: 1rem;
+}

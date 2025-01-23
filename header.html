@@ -1,7 +1,8 @@
 <!-- htmlhint doctype-first: false -->
 <!-- this is a reusable component, so we shouldn't declare a doctype -->
-<div>
-  <div class="header-nav punk">
+<link href="header.css" id="header-stylesheet-link" rel="stylesheet" />
+<div class="punk">
+  <div class="header-nav">
     <div class="header-link-group">
       <a class="header-link icon-link" href="/index.html">
         <!--        TODO fix alt text-->
@@ -54,36 +55,38 @@
     </a>
   </div>
 
-  <div class="hamburger-menu punk hide" id="hamburger-menu">
-    <a class="header-link" href="/music.html">Music</a>
-    <a class="header-link" href="/shows.html">Shows</a>
-    <a class="header-link" href="/about.html">About</a>
-    <a class="header-link" href="/contact.html">Contact</a>
-    <div class="header-link-group">
-      <a
-        class="icon-link header-link"
-        href="https://instagram.com/batboxseattle"
-        target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a
-        class="icon-link header-link"
-        href="https://facebook.com/batboxseattle"
-        target="_blank">
-        <i class="fa-brands fa-facebook"></i>
-      </a>
-      <a
-        class="icon-link header-link"
-        href="https://open.spotify.com/artist/2fejw4OmvoKdWg2lGn57ed?si=xgBpbuiPT8O5hundnVKXrg"
-        target="_blank">
-        <i class="fa-brands fa-spotify"></i>
-      </a>
-      <a
-        class="header-link icon-link"
-        href="https://www.youtube.com/channel/UCkjKODCuoQ6OIGHd_7YtILg"
-        target="_blank">
-        <i class="fa-brands fa-youtube"></i>
-      </a>
+  <div id="hamburger-menu" class="hamburger-menu hide">
+    <div id="hamburger-menu-container" class="hamburger-menu-container">
+      <a class="header-link" href="/music.html">Music</a>
+      <a class="header-link" href="/shows.html">Shows</a>
+      <a class="header-link" href="/about.html">About</a>
+      <a class="header-link" href="/contact.html">Contact</a>
+      <div class="header-link-group">
+        <a
+          class="icon-link header-link"
+          href="https://instagram.com/batboxseattle"
+          target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          class="icon-link header-link"
+          href="https://facebook.com/batboxseattle"
+          target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a
+          class="icon-link header-link"
+          href="https://open.spotify.com/artist/2fejw4OmvoKdWg2lGn57ed?si=xgBpbuiPT8O5hundnVKXrg"
+          target="_blank">
+          <i class="fa-brands fa-spotify"></i>
+        </a>
+        <a
+          class="header-link icon-link"
+          href="https://www.youtube.com/channel/UCkjKODCuoQ6OIGHd_7YtILg"
+          target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
     </div>
   </div>
 </div>
