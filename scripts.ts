@@ -4,9 +4,9 @@ import $ from "jquery";
 import "./shows";
 import "./initialize-swiper";
 import "./header/header";
+import "./footer/footer";
 
 window.addEventListener("load", () => {
-  $("#footer").load("footer.html");
   $("#spotify-widget").load("spotify-widget.html", () => {
     initializeHideButton();
   });
