@@ -26,6 +26,7 @@ module.exports = (env, argv) => {
         directory: __dirname,
       },
       hot: true,
+	  liveReload: false
     },
   };
 };
