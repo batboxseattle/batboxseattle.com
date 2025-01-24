@@ -59,7 +59,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     
     // The original URL points towards a compressed image, but we want to dowload the original one
     // localed in the /media/uncompressed folder instead
-    
     const uncompressedImageUrl = imageUrl.replace("/media/", "/media/uncompressed/");
     
     const link = document.createElement("a");
