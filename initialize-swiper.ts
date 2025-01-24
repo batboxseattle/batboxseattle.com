@@ -56,11 +56,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   downloadButton.addEventListener("click", () => {
     const currentSlide = swiper.slides[swiper.activeIndex];
     const imageUrl = (currentSlide.children[0] as HTMLImageElement).src;
-    
+
     // The original URL points towards a compressed image, but we want to dowload the original one
     // localed in the /media/uncompressed folder instead
-    const uncompressedImageUrl = imageUrl.replace("/media/", "/media/uncompressed/");
-    
+    const uncompressedImageUrl = imageUrl.replace(
+      "/media/",
+      "/media/uncompressed/",
+    );
+
     const link = document.createElement("a");
     link.target = "_blank";
     link.href = uncompressedImageUrl;
