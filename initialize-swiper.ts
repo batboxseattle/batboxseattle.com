@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const img = document.createElement("img");
     img.className = "swiper-image";
-    img.src = `media/press-photos/${pressPhotoFileName}`;
+    img.src = `https://batboxseattle-assets.s3.us-west-2.amazonaws.com/media/press-photos/${pressPhotoFileName}`;
     img.alt = "Press photo of the members of Batbox.";
 
     swiperSlide.appendChild(img);
@@ -56,10 +56,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   downloadButton.addEventListener("click", () => {
     const currentSlide = swiper.slides[swiper.activeIndex];
     const imageUrl = (currentSlide.children[0] as HTMLImageElement).src;
-
+    
+    // The original URL points towards a compressed image, but we want to dowload the original one
+    // localed in the /media/uncompressed folder instead
+    
+    const uncompressedImageUrl = imageUrl.replace("/media/", "/media/uncompressed/");
+    
     const link = document.createElement("a");
     link.target = "_blank";
-    link.href = imageUrl;
+    link.href = uncompressedImageUrl;
     link.download = "";
     document.body.appendChild(link);
     link.click();

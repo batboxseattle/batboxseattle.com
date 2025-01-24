@@ -53,7 +53,7 @@ function listAllImagesInFolder(folder: string): string[] {
 
 async function compressImage(inputFilePath: string, compressionSize: number) {
     const fileExtensionIndex = inputFilePath.lastIndexOf(".");
-    const outputFilePath = COMPRESSION_OUTPUT_FOLDER + inputFilePath.slice(0, fileExtensionIndex) + "_compressed" + inputFilePath.slice(fileExtensionIndex);
+    const outputFilePath = COMPRESSION_OUTPUT_FOLDER + inputFilePath;
     console.log(`Compressing ${inputFilePath} to ${compressionSize}p into ${outputFilePath}`);
     try {
         await sharp(inputFilePath).resize(compressionSize).toFile(outputFilePath);
