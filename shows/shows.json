@@ -2,75 +2,75 @@
   "shows": [
     {
       "title": "Mister Blank w/ Without a Doubt, Batbox",
-      "image": "/media/show-flyers/2025-01-10 flyer (print).png",
+      "image": "https://batboxseattle-assets.s3.us-west-2.amazonaws.com/media/show-flyers/2025-01-10 flyer (print).png",
       "startDate": "January 10, 2025 08:00 PM",
       "location": "High Dive, Seattle, WA",
       "link": "https://www.tixr.com/groups/highdive/events/mister-blank-w-without-a-doubt-batbox-119643"
     },
     {
       "title": "Batbox, Cat Valley, Vanilla Abstract",
-      "image": "/media/show-flyers/2024-10-25 flyer (print).png",
+      "image": "https://batboxseattle-assets.s3.us-west-2.amazonaws.com/media/show-flyers/2024-10-25 flyer (print).png",
       "startDate": "October 25, 2024 09:00 PM",
       "location": "Conor Byrne Pub, Seattle, WA"
     },
     {
       "title": "Volume Inlander Music Festival",
-      "image": "/media/show-flyers/2024-09-13 flyer (individual).jpg",
+      "image": "https://batboxseattle-assets.s3.us-west-2.amazonaws.com/media/show-flyers/2024-09-13 flyer (individual).jpg",
       "startDate": "September 13, 2024",
       "endDate": "September 14, 2024",
       "location": "Spokane, WA"
     },
     {
       "title": "Accendino, Drea & The Marilyns, Batbox",
-      "image": "/media/show-flyers/2024-08-28 flyer (print).png",
+      "image": "https://batboxseattle-assets.s3.us-west-2.amazonaws.com/media/show-flyers/2024-08-28 flyer (print).png",
       "startDate": "August 28, 2024 7:00 PM",
       "location": "Central Saloon, Seattle, WA"
     },
     {
       "title": "The Local Music Scene Summer Showcase",
-      "image": "/media/show-flyers/2024-08-09 flyer.png",
+      "image": "https://batboxseattle-assets.s3.us-west-2.amazonaws.com/media/show-flyers/2024-08-09 flyer.png",
       "startDate": "August 9, 2024 8 pm",
       "location": "Blue Moon Tavern, Seattle, WA"
     },
     {
       "title": "Alki Art Fair",
-      "image": "/media/show-flyers/2024-07-20 flyer.png",
+      "image": "https://batboxseattle-assets.s3.us-west-2.amazonaws.com/media/show-flyers/2024-07-20 flyer.png",
       "startDate": "July 20, 2024",
       "location": "Alki Beach, Seattle, WA"
     },
     {
       "title": "Pioneer Square Fest",
-      "image": "/media/show-flyers/2024-07-05 flyer (individual).png",
+      "image": "https://batboxseattle-assets.s3.us-west-2.amazonaws.com/media/show-flyers/2024-07-05 flyer (individual).png",
       "startDate": "July 5 - July 6, 2024",
       "location": "Pioneer Square, Seattle, WA"
     },
     {
       "title": "Fremont Fair",
-      "image": "/media/show-flyers/2024-06-23 flyer (individual).jpg",
+      "image": "https://batboxseattle-assets.s3.us-west-2.amazonaws.com/media/show-flyers/2024-06-23 flyer (individual).jpg",
       "startDate": "June 23, 2024",
       "location": "Fremont, Seattle, WA"
     },
     {
       "title": "Snohomish Pride Festival",
-      "image": "/media/show-flyers/2024-06-01 flyer (Snohomish Pride Festival) (variation 1).jpeg",
+      "image": "https://batboxseattle-assets.s3.us-west-2.amazonaws.com/media/show-flyers/2024-06-01 flyer (Snohomish Pride Festival) (variation 1).jpeg",
       "startDate": "June 1, 2024 11:00 am",
       "location": "Carnegie Building, Snohomish, WA"
     },
     {
       "title": "Snohomish Pride Festival",
-      "image": "/media/show-flyers/2024-06-01 flyer (print).png",
+      "image": "https://batboxseattle-assets.s3.us-west-2.amazonaws.com/media/show-flyers/2024-06-01 flyer (print).png",
       "startDate": "June 1, 2024 8:00 pm",
       "location": "High Dive, Seattle, WA"
     },
     {
       "title": "Batbox, Dain Norman & The Chrysalis Effect, Falling North",
-      "image": "/media/show-flyers/2024-03-19 flyer.jpg",
+      "image": "https://batboxseattle-assets.s3.us-west-2.amazonaws.com/media/show-flyers/2024-03-19 flyer.jpg",
       "startDate": "March 19, 2024 7 pm",
       "location": "Sunset Tavern, Seattle, WA"
     },
     {
       "title": "Batbox, Los Ocupados",
-      "image": "/media/show-flyers/2024-03-01 flyer.jpg",
+      "image": "https://batboxseattle-assets.s3.us-west-2.amazonaws.com/media/show-flyers/2024-03-01 flyer.jpg",
       "startDate": "March 1, 2024 7 pm",
       "location": "Bob's Java Jive, Tacoma, WA"
     }
