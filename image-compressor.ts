@@ -66,7 +66,30 @@ async function compressImage(inputFilePath: string, compressionSize: number) {
     `Compressing ${inputFilePath} to ${compressionSize}p into ${outputFilePath}`,
   );
   try {
-    await sharp(inputFilePath).resize(compressionSize).toFile(outputFilePath);
+    const image = sharp(inputFilePath);
+    const metadata = await image.metadata();
+
+    const width = metadata.width;
+    const height = metadata.height;
+
+    if (!width || !height) {
+      throw new Error(`Unable to get dimensions for ${inputFilePath}`);
+    }
+
+    let newHeight = null;
+    let newWidth = null;
+
+    if (width > height) {
+      newHeight = compressionSize;
+    } else {
+      newWidth = compressionSize;
+    }
+
+    await image
+      .resize(newWidth, newHeight, {
+        withoutEnlargement: true,
+      })
+      .toFile(outputFilePath);
   } catch (err) {
     console.log(`Failed to process: ${inputFilePath}`);
     throw err;

@@ -5,12 +5,13 @@
   "scripts": {
     "build": "npm run copy-node-modules && webpack --mode production",
     "copy-node-modules": "mkdir -p dist && cp -r node_modules dist/node_modules",
-    "compress": "ts-node image-compressor.ts",
+    "compress": "node --loader ts-node/esm image-compressor.ts",
     "start": "npm run copy-node-modules && webpack serve --mode development",
     "style-check": "status=0; for command in 'prettier --check **/*.{css,html,js,json,md,mjs,ts,yml}' eslint 'htmlhint --config .htmlhintrc.json' 'stylelint **/*.css'; do eval $command || status=1; done; exit $status",
     "style-fix": "status=0; for command in 'prettier --write **/*.{css,html,js,json,md,mjs,ts,yml}' 'eslint --fix' 'stylelint --fix **/*.css'; do eval $command || status=1; done; exit $status",
     "prepare": "husky"
   },
+  "type": "module",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@types/jquery": "^3.5.32",
