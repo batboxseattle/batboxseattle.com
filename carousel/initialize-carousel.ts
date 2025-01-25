@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   const pressPhotoFileNames: string[] = (
-    await (await fetch("press-photos.json")).json()
+    await (await fetch("carousel/press-photos.json")).json()
   ).images;
 
   pressPhotoFileNames.forEach((pressPhotoFileName) => {
@@ -49,11 +49,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     },
   });
 
-  const downloadButton = document.getElementById("swiper-download-button");
-  if (!downloadButton) {
+  const carouselDownloadButton = document.getElementById(
+    "carousel-download-button",
+  );
+  if (!carouselDownloadButton) {
     return;
   }
-  downloadButton.addEventListener("click", () => {
+  carouselDownloadButton.addEventListener("click", () => {
     const currentSlide = swiper.slides[swiper.activeIndex];
     const imageUrl = (currentSlide.children[0] as HTMLImageElement).src;
 

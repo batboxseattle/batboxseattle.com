@@ -36,7 +36,7 @@ function getImageDimensions(imageUrl: string): Promise<Dimensions> {
 
 export async function loadRandomImages() {
   const data: { images: string[] } = await (
-    await fetch("collage-images.json")
+    await fetch("image-collage/collage-images.json")
   ).json();
   const imageFileNames = shuffleArray(data.images);
 
@@ -66,7 +66,7 @@ export async function loadRandomImages() {
 
     for (const image of images) {
       const img = document.createElement("img");
-
+      img.classList.add("image-collage-image");
       img.src = image.src;
       img.alt = "Photo of Batbox performing onstage.";
       img.style.width = `${(image.normalizedWidth / totalNormalizedWidth) * 100}%`;

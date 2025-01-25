@@ -1,0 +1,28 @@
+blockquote {
+  padding-left: 1rem;
+  font-style: italic;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.blockquote-divider {
+  border-bottom: 0.05rem solid var(--primary-color);
+  width: 100%;
+}
+
+.quote-container-left {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: start;
+  align-items: start;
+}
+
+.quote-container-center {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}

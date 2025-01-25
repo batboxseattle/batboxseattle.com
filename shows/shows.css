@@ -1,0 +1,26 @@
+.show-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5%;
+  padding-left: 25%;
+  padding-right: 25%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.show-flyer {
+  flex: 1;
+  max-width: 100%;
+  min-width: 40%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.show-details {
+  flex: 1;
+  max-width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  text-wrap: pretty;
+}

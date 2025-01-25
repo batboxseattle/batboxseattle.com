@@ -1,0 +1,36 @@
+.featured-video-container {
+  width: 80%;
+}
+
+.featured-video {
+  width: 100%;
+}
+
+.player-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.youtube-player-grid-item,
+.player-grid-item {
+  flex: 1 1 30rem;
+  border: none;
+}
+
+.player-grid-item {
+  height: 30rem;
+}
+
+.youtube-player-grid-item {
+  aspect-ratio: 16 / 9;
+}
+
+.spotify-player {
+  width: 100%;
+  border-radius: 1rem;
+  border: none;
+}

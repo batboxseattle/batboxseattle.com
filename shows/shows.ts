@@ -87,7 +87,7 @@ function createShowElement(show: Show, isUpcoming: boolean): HTMLElement {
 
 function createSpacerElement(): HTMLElement {
   const spacerElement = document.createElement("div");
-  spacerElement.className = "bottom-spacer-7";
+  spacerElement.className = "spacer";
   return spacerElement;
 }
 
@@ -101,7 +101,7 @@ async function populateShows() {
   }
 
   const shows = SHOWS_SCHEMA.parse(
-    await (await fetch("/shows.json")).json(),
+    await (await fetch("shows/shows.json")).json(),
   ).shows;
   const now = new Date();
 

@@ -1,7 +1,7 @@
 import $ from "jquery";
 
 window.addEventListener("load", () => {
-  $("#spotify-widget").load("spotify-widget/spotify-widget.html", () => {
+  $("#player").load("player/spotify-widget.html", () => {
     initializeHideButton();
   });
 });

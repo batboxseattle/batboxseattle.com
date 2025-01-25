@@ -1,6 +1,6 @@
-import "./collage-images";
-import "./spotify-widget/spotify-widget";
-import "./shows";
-import "./initialize-swiper";
+import "./image-collage/image-collage";
+import "./player/spotify-widget";
+import "./shows/shows";
+import "./carousel/initialize-carousel";
 import "./header/header";
 import "./footer/footer";
