@@ -3,6 +3,16 @@ import $ from "jquery";
 window.addEventListener("load", () => {
   $(".spotify-widget").load("player/spotify-widget.html", () => {
     initializeHideButton();
+    const stylesheetLink = document.getElementById("spotify-widget-stylesheet-link");
+    if (!stylesheetLink) {
+      return;
+    }
+    stylesheetLink.addEventListener("load", () => {
+      resizeSpotifyPlayerIfNeeded();
+      window.addEventListener("resize", async (): Promise<void> => {
+        resizeSpotifyPlayerIfNeeded();
+      });
+    })
   });
 });
 
@@ -39,4 +49,20 @@ function initializeHideButton() {
       }
     }
   });
+}
+
+function resizeSpotifyPlayerIfNeeded() {
+  const spotifyPlayer = document.getElementById("spotify-player");
+  if (!spotifyPlayer) {
+    return;
+  }
+
+  // temporarily remove maxHeight to measure the natural height
+  spotifyPlayer.style.maxHeight = "none";
+  const naturalHeight = spotifyPlayer.clientHeight;
+  if (naturalHeight < 152) {
+    spotifyPlayer.style.maxHeight = "80px";
+  } else if (naturalHeight < 352) {
+    spotifyPlayer.style.maxHeight = "152px";
+  }
 }
