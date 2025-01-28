@@ -1,3 +1,7 @@
+.image-collage {
+  display: flex;
+}
+
 .image-collage-image {
   filter: brightness(50%);
 }
