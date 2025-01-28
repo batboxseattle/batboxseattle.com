@@ -3,7 +3,9 @@ import $ from "jquery";
 window.addEventListener("load", () => {
   $(".spotify-widget").load("player/spotify-widget.html", () => {
     initializeHideButton();
-    const stylesheetLink = document.getElementById("spotify-widget-stylesheet-link");
+    const stylesheetLink = document.getElementById(
+      "spotify-widget-stylesheet-link",
+    );
     if (!stylesheetLink) {
       return;
     }
@@ -12,7 +14,7 @@ window.addEventListener("load", () => {
       window.addEventListener("resize", async (): Promise<void> => {
         resizeSpotifyPlayerIfNeeded();
       });
-    })
+    });
   });
 });
 
