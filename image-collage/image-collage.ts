@@ -52,7 +52,7 @@ export async function loadRandomImages() {
           index * IMAGES_PER_COLLAGE + IMAGES_PER_COLLAGE,
         )
         .map(async (fileName) => {
-          const imageUrl = `https://batboxseattle-assets.s3.us-west-2.amazonaws.com/media/collage-images/${fileName}`;
+          const imageUrl = `media/collage-images/${fileName}`;
           const { width, height } = await getImageDimensions(imageUrl);
 
           return { src: imageUrl, normalizedWidth: width / height };

@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const img = document.createElement("img");
     img.className = "swiper-image";
-    img.src = `https://batboxseattle-assets.s3.us-west-2.amazonaws.com/media/press-photos/${pressPhotoFileName}`;
+    img.src = `media/press-photos/${pressPhotoFileName}`;
     img.alt = "Press photo of the members of Batbox.";
 
     swiperSlide.appendChild(img);

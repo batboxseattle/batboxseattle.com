@@ -44,8 +44,8 @@ body {
 
 .textured-background {
   background-image: url("/media/assets/texture-background.jpg");
-  background-size: auto;
-  background-position: center;
+  background-size: 100% auto;
+  background-position: center top;
   background-repeat: repeat-y;
   height: fit-content;
 }
