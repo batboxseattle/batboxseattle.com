@@ -3,18 +3,18 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 5%;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 10%;
+  padding-right: 10%;
   width: 100%;
   box-sizing: border-box;
 }
 
 .show-flyer {
   flex: 1;
-  max-width: 100%;
-  min-width: 40%;
-  height: auto;
+  max-height: 50vh;
   box-sizing: border-box;
+  object-fit: contain;
+  width: 100%;
 }
 
 .show-details {
