@@ -120,6 +120,11 @@ a.large-text {
   color: white;
 }
 
+.anchor-link,
+.anchor-link:hover {
+  all: inherit;
+}
+
 .spacer {
   height: 7vh;
 }
