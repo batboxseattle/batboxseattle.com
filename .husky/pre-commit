@@ -2,7 +2,7 @@ added_files=$(git diff --name-only --cached --diff-filter=d)
 
 npm run style-fix
 
-while IFS= read -r file; do
+echo "$added_files" | while IFS= read -r file; do
   git add "$file"
 done
 
