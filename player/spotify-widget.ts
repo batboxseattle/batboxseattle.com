@@ -43,6 +43,7 @@ function initializeHideButton() {
       if (spotifyPlayer.style.display === "none") {
         spotifyPlayer.style.display = "block";
         updateButtonText(button, false);
+        resizeSpotifyPlayerIfNeeded();
         localStorage.setItem("spotifyPlayerVisible", "visible");
       } else {
         spotifyPlayer.style.display = "none";
