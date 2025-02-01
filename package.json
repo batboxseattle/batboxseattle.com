@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "batboxseattle.com",
   "scripts": {
-    "build": "concurrently \"npm run build:dependencies\" \"npm run build:webpack\"",
+    "build": "concurrently \"npm run build:prepare\" \"npm run build:webpack\"",
     "build:css": "find . -name \"*.css\" -type f -not -path \"./node_modules/*\" -not -path \"./dist/*\" | while read file; do\n    mkdir -p \"dist/$(dirname \"$file\")\"\n    postcss \"$file\" -o \"dist/$file\"\ndone\n",
     "build:dependencies": "mkdir -p dist && cp -r node_modules dist/node_modules",
     "build:prepare": "concurrently \"npm run build:dependencies\" \"npm run build:css\"",
