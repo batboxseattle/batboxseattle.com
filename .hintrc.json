@@ -1,0 +1,9 @@
+{
+  "extends": ["web-recommended"],
+  "ignoredUrls": [
+    {
+      "domain": ".*/dist/node_modules/.*",
+      "hints": ["*"]
+    }
+  ]
+}

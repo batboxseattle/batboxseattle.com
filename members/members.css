@@ -21,7 +21,17 @@
   flex: 1;
   max-width: 100%;
   text-align: left;
-  text-wrap: pretty;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+  line-break: auto;
+  white-space: normal;
+}
+
+@supports (text-wrap: pretty) {
+  .member-details {
+    text-wrap: pretty;
+  }
 }
 
 .member-pronouns {

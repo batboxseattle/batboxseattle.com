@@ -22,7 +22,17 @@
   max-width: 100%;
   text-align: left;
   box-sizing: border-box;
-  text-wrap: pretty;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+  line-break: auto;
+  white-space: normal;
+}
+
+@supports (text-wrap: pretty) {
+  .album-details {
+    text-wrap: pretty;
+  }
 }
 
 .album-links {

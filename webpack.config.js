@@ -24,6 +24,7 @@ export default (env, argv) => ({
     extensions: [".tsx", ".ts", ".js"],
   },
   devServer: {
+    port: 8080,
     static: {
       directory: dirname,
     },

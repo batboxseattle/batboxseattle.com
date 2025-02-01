@@ -2,13 +2,14 @@
 <!-- this is a reusable component, so we shouldn't declare a doctype -->
 <link
   id="spotify-widget-stylesheet-link"
-  href="player/spotify-widget.css"
+  href="dist/player/spotify-widget.css"
   rel="stylesheet" />
-<button id="hide-button" class="hide-button">Hide Spotify player</button>
+<button id="hide-button" class="hide-button" type="button">
+  Hide Spotify player
+</button>
 <iframe
   id="spotify-player"
   class="spotify-player"
   title="Batbox - Spotify"
   src="https://open.spotify.com/embed/artist/2fejw4OmvoKdWg2lGn57ed?utm_source=generator"
-  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-  loading="lazy"></iframe>
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>

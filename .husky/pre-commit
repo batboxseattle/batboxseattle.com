@@ -1,9 +1,9 @@
 added_files=$(git diff --name-only --cached --diff-filter=d)
 
-npm run style-fix
+npm run style:fix
 
 echo "$added_files" | while IFS= read -r file; do
   git add "$file"
 done
 
-npm run style-check
+npm run style:check

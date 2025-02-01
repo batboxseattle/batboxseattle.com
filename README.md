@@ -8,9 +8,9 @@ Start a local development server: `npm run start`
 
 Build for production: `npm run build`
 
-Style check: `npm run style-check`
+Style check: `npm run style:check`
 
-Fix most style issues: `npm run style-fix`
+Fix most style issues: `npm run style"fix`
 
 ## Compressing image assets
 
