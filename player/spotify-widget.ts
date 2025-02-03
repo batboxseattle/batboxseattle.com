@@ -1,4 +1,5 @@
 import $ from "jquery";
+import storageAvailable from "storage-available";
 
 window.addEventListener("load", () => {
   $(".spotify-widget").load("player/spotify-widget.html", () => {
@@ -26,7 +27,11 @@ function initializeHideButton() {
   const button = document.getElementById("hide-button");
   const spotifyPlayer = document.getElementById("spotify-player");
 
-  const savedState = localStorage.getItem("spotifyPlayerVisible");
+  const isLocalStorageAvailable = storageAvailable("localStorage");
+
+  const savedState = isLocalStorageAvailable
+    ? localStorage.getItem("spotifyPlayerVisible")
+    : "visible";
 
   if (spotifyPlayer && button) {
     if (savedState === "hidden") {
@@ -44,11 +49,15 @@ function initializeHideButton() {
         spotifyPlayer.style.display = "block";
         updateButtonText(button, false);
         resizeSpotifyPlayerIfNeeded();
-        localStorage.setItem("spotifyPlayerVisible", "visible");
+        if (isLocalStorageAvailable) {
+          localStorage.setItem("spotifyPlayerVisible", "visible");
+        }
       } else {
         spotifyPlayer.style.display = "none";
         updateButtonText(button, true);
-        localStorage.setItem("spotifyPlayerVisible", "hidden");
+        if (isLocalStorageAvailable) {
+          localStorage.setItem("spotifyPlayerVisible", "hidden");
+        }
       }
     }
   });
