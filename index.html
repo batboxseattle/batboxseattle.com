@@ -141,5 +141,30 @@
     <div class="image-collage"></div>
 
     <div id="footer"></div>
+
+    <div
+      id="debug-panel"
+      style="
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: black;
+        color: white;
+        padding: 5px;
+        font-size: 12px;
+      "></div>
+    <script>
+      function logDebug(message) {
+        let panel = document.getElementById("debug-panel");
+        panel.innerHTML += `<div>${message}</div>`;
+      }
+
+      window.onerror = function (message, source, lineno, colno, error) {
+        logDebug(`Error: ${message} at ${source}:${lineno}:${colno}:${error}`);
+      };
+
+      logDebug("Messenger Browser Detected: " + navigator.userAgent);
+    </script>
   </body>
 </html>
