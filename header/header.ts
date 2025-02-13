@@ -75,11 +75,14 @@ async function toggleHeaderIfNeeded() {
     navLinks.classList.contains("hide") ||
     socialLinks.classList.contains("hide");
 
+  await new Promise((resolve) => setTimeout(resolve, 0));
+
   // temporarily show the navLinks to measure full width
   if (areLinksHidden) {
     navLinks.classList.remove("hide");
     socialLinks.classList.remove("hide");
   }
+  await new Promise((resolve) => setTimeout(resolve, 0));
   const fullWidth = headerNav.scrollWidth;
 
   // restore the original state
@@ -88,7 +91,6 @@ async function toggleHeaderIfNeeded() {
     socialLinks.classList.add("hide");
   }
 
-  logDebug(areLinksHidden);
   logDebug(fullWidth);
   logDebug(window.innerWidth);
 
