@@ -154,17 +154,5 @@
         padding: 5px;
         font-size: 12px;
       "></div>
-    <script>
-      function logDebug(message) {
-        let panel = document.getElementById("debug-panel");
-        panel.innerHTML += `<div>${message}</div>`;
-      }
-
-      window.onerror = function (message, source, lineno, colno, error) {
-        logDebug(`Error: ${message} at ${source}:${lineno}:${colno}:${error}`);
-      };
-
-      logDebug("Messenger Browser Detected: " + navigator.userAgent);
-    </script>
   </body>
 </html>
