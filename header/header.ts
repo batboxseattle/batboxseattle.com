@@ -1,5 +1,4 @@
 import $ from "jquery";
-import { logDebug } from "../scripts";
 
 window.addEventListener("load", () => {
   $("#header").load("header/header.html", () => {
@@ -75,14 +74,11 @@ async function toggleHeaderIfNeeded() {
     navLinks.classList.contains("hide") ||
     socialLinks.classList.contains("hide");
 
-  await new Promise((resolve) => setTimeout(resolve, 0));
-
   // temporarily show the navLinks to measure full width
   if (areLinksHidden) {
     navLinks.classList.remove("hide");
     socialLinks.classList.remove("hide");
   }
-  await new Promise((resolve) => setTimeout(resolve, 0));
   const fullWidth = headerNav.scrollWidth;
 
   // restore the original state
@@ -91,16 +87,14 @@ async function toggleHeaderIfNeeded() {
     socialLinks.classList.add("hide");
   }
 
-  logDebug(fullWidth);
-  logDebug(window.innerWidth);
-
-  if (!areLinksHidden && fullWidth > window.innerWidth) {
-    logDebug("HERE 1");
+  if (!areLinksHidden && fullWidth > document.documentElement.clientWidth) {
     hamburgerMenuButton.classList.remove("hide");
     navLinks.classList.add("hide");
     socialLinks.classList.add("hide");
-  } else if (areLinksHidden && fullWidth <= window.innerWidth) {
-    logDebug("HERE 2");
+  } else if (
+    areLinksHidden &&
+    fullWidth <= document.documentElement.clientWidth
+  ) {
     hamburgerMenuButton.classList.add("hide");
     navLinks.classList.remove("hide");
     socialLinks.classList.remove("hide");
