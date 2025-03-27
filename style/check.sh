@@ -1,7 +1,7 @@
 #!/bin/bash
 
 APP_NAME=$(uuidgen)
-SERVER_TIMEOUT=30
+SERVER_TIMEOUT=60
 
 start_server() {
     pm2 start --name "$APP_NAME" npm -- run start > /dev/null 2>&1
