@@ -1,6 +1,20 @@
 {
   "shows": [
     {
+      "title": "Edmonds PrideFest 2025",
+      "image": "media/show-flyers/2025-06-28 flyer.jpg",
+      "startDate": "June 28, 2025 2:00 PM",
+      "location": "Civic Center Playfield, Edmonds, WA",
+      "link": "https://edmondspride.net/Events/"
+    },
+    {
+      "title": "Pride at Make.Shift",
+      "image": "media/show-flyers/2025-06-07 flyer.jpg",
+      "startDate": "June 7, 2025 2:00 PM",
+      "location": "Make.Shift Alley, Bellingham, WA",
+      "link": "https://makeshiftartspace.org/events/prideatmakeshift"
+    },
+    {
       "title": "Real Art Tacoma Presents: Rundown Kreeps, Politicians Eyes, Mister Blank, Bat Box, Dirty Tribe",
       "image": "media/show-flyers/2025-05-16 flyer.jpg",
       "startDate": "May 16, 2025 6:45 PM",
