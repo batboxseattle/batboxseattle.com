@@ -75,7 +75,7 @@ function createShowElement(show: Show, isUpcoming: boolean): HTMLElement {
     const link = document.createElement("a");
     link.className = "button-link punk";
     link.href = show.link;
-    link.textContent = "Get tickets";
+    link.textContent = "See details";
     details.appendChild(link);
   }
 
