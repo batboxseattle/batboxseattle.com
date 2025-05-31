@@ -76,6 +76,7 @@ function createShowElement(show: Show, isUpcoming: boolean): HTMLElement {
     link.className = "button-link punk";
     link.href = show.link;
     link.textContent = "See details";
+    link.target = "_blank";
     details.appendChild(link);
   }
 
