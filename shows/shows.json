@@ -1,6 +1,13 @@
 {
   "shows": [
     {
+      "title": "Third Annual Solstice Fest",
+      "image": "media/show-flyers/2025-06-21 flyer.png",
+      "startDate": "June 21, 2025 2:00 PM",
+      "location": "Orcas Grange, Orcas Island, WA",
+      "link": "https://www.facebook.com/share/1R7U5zt6t5/"
+    },
+    {
       "title": "Bremerton Bridge Blast",
       "image": "media/show-flyers/2025-06-29 flyer.png",
       "startDate": "June 28, 2025 11:00 AM",
