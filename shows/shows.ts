@@ -77,6 +77,7 @@ function createShowElement(show: Show, isUpcoming: boolean): HTMLElement {
     link.href = show.link;
     link.textContent = "See details";
     link.target = "_blank";
+    link.rel = "noopener";
     details.appendChild(link);
   }
 
