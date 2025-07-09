@@ -1,6 +1,14 @@
 {
   "shows": [
     {
+      "title": "Alki Art Fair",
+      "image": "media/show-flyers/2025-07-20 flyer (Instagram).png",
+      "startDate": "July 18, 2025 2:00 PM",
+      "endDate": "July 20, 2025 6:00 PM",
+      "location": "Alki Beach, Seattle, WA",
+      "link": "https://alkiartfair.org/"
+    },
+    {
       "title": "The Local Music Scene Summer Showcase",
       "image": "media/show-flyers/2025-08-16 flyer.png",
       "startDate": "August 16, 2025 7:00 PM",
