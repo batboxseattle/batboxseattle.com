@@ -1,6 +1,27 @@
 {
   "shows": [
     {
+      "title": "RIP LWC: The Reunion",
+      "image": "media/show-flyers/2025-07-26 flyer.png",
+      "startDate": "July 26, 2025 8:00 PM",
+      "location": "Spanish Ballroom, Tacoma, WA",
+      "link": "https://www.mcmenamins.com/events/267301-the-lightweight-champs"
+    },
+    {
+      "title": "RIP LWC: The Reunion",
+      "image": "media/show-flyers/2025-07-25 flyer.png",
+      "startDate": "July 25, 2025 7:30 PM",
+      "location": "DECAY, Olympia, WA",
+      "link": "https://decay.events/view.php?file=072525-ripreunion.json"
+    },
+    {
+      "title": "RIP LWC: The Reunion",
+      "image": "media/show-flyers/2025-07-24 flyer.png",
+      "startDate": "July 24, 2025 8:00 PM",
+      "location": "Blue Moon Tavern, Seattle, WA",
+      "link": "https://www.thebluemoonseattle.com/calendar"
+    },
+    {
       "title": "Alki Art Fair",
       "image": "media/show-flyers/2025-07-20 flyer (Instagram).png",
       "startDate": "July 18, 2025 2:00 PM",
