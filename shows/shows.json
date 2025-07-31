@@ -1,6 +1,19 @@
 {
   "shows": [
     {
+      "title": "Pit Fest",
+      "image": "media/show-flyers/2025-08-23 flyer (print).png",
+      "startDate": "August 23, 2025 12:00 PM",
+      "location": "The Gravel Pit, Tacoma, WA",
+      "link": "https://linktr.ee/gravelpitfest"
+    },
+    {
+      "title": "Pink Steam, Batbox, Beautiful Freaks, Amplify Showcase",
+      "image": "media/show-flyers/2025-08-22 flyer.png",
+      "startDate": "August 22, 2025 6:00 PM",
+      "location": "Community Resource Center of Stanwood Camano, Stanwood, WA"
+    },
+    {
       "title": "RIP LWC: The Reunion",
       "image": "media/show-flyers/2025-07-26 flyer.png",
       "startDate": "July 26, 2025 8:00 PM",
