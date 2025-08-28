@@ -1,11 +1,5 @@
 import { execFileSync, spawnSync } from "child_process";
 
-class PreCommitError extends Error {
-  constructor(command: string, status: number | null) {
-    super(`Command '${command}' failed with status ${status}.`);
-  }
-}
-
 async function main() {
   const stagedFileNames = execFileSync(
     "git",
@@ -51,7 +45,9 @@ async function main() {
 function runNpmCommand(command: string, ignoreResult = false) {
   const result = spawnSync("npm", ["run", command], { stdio: "inherit" });
   if (!ignoreResult && result.status !== 0) {
-    throw new PreCommitError(`npm run ${command}`, result.status);
+    throw new Error(
+      `command 'npm run ${command}' failed with status ${result.status}`,
+    );
   }
 }
 
