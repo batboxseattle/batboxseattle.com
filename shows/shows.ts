@@ -6,10 +6,9 @@ import { ParsedResult } from "chrono-node/src/types";
 
 const DATE_STRING_SCHEMA = z.string().transform((val, ctx) => {
   const parsedResult: ParsedResult = parse(val)[0];
-  parsedResult.start.isCertain("hour");
   if (!parsedResult) {
     ctx.addIssue({
-      code: z.ZodIssueCode.invalid_date,
+      code: "custom",
       message: "Invalid date string",
     });
     return z.NEVER;
