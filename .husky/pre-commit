@@ -1,11 +1,1 @@
-added_files=$(git diff --name-only --cached --diff-filter=d)
-
-npm run update-collage-images
-
-npm run style:fix
-
-echo "$added_files" | while IFS= read -r file; do
-  git add "$file"
-done
-
-npm run style:check
+npm run pre-commit

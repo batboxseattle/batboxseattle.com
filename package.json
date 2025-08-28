@@ -12,9 +12,11 @@
     "update-collage-images": "tsx node-scripts/update-collage-images.ts",
     "style:check": "tsx node-scripts/style/check.ts",
     "style:fix": "tsx node-scripts/style/fix.ts",
+    "pre-commit": "tsx node-scripts/pre-commit.ts",
     "start": "concurrently --kill-others \"npm run build:prepare && webpack serve --mode development\" \"npm run watch:css\" \"npm run watch:dependencies\"",
     "watch:css": "chokidar '**/*.css' --ignore 'node_modules/**' --ignore 'dist/**' -c 'npm run build:css'",
-    "watch:dependencies": "chokidar 'node_modules/**' -c 'npm run build:dependencies'"
+    "watch:dependencies": "chokidar 'node_modules/**' -c 'npm run build:dependencies'",
+    "prepare": "husky"
   },
   "type": "module",
   "dependencies": {
@@ -47,6 +49,7 @@
     "globals": "^16.3.0",
     "hint": "^7.1.13",
     "htmlhint": "^1.6.3",
+    "husky": "^9.1.7",
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.1",
     "prettier": "^3.6.2",
