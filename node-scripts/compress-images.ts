@@ -72,10 +72,6 @@ async function compressImage(inputFilePath: string, compressionSize: number) {
     const width = metadata.width;
     const height = metadata.height;
 
-    if (!width || !height) {
-      throw new Error(`Unable to get dimensions for ${inputFilePath}`);
-    }
-
     let newHeight = null;
     let newWidth = null;
 

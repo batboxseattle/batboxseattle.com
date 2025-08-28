@@ -1,4 +1,4 @@
-@import url("/dist/node_modules/@fortawesome/fontawesome-free/css/all.min.css");
+@import url("../node_modules/@fortawesome/fontawesome-free/css/all.min.css");
 
 #header {
   position: sticky;

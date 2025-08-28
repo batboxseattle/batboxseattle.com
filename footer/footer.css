@@ -1,4 +1,4 @@
-@import url("/dist/node_modules/@fortawesome/fontawesome-free/css/all.min.css");
+@import url("../node_modules/@fortawesome/fontawesome-free/css/all.min.css");
 
 .footer-nav {
   display: flex;
@@ -12,7 +12,7 @@
 .footer-nav a {
   font-size: 2rem;
   color: white;
-  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .footer-right-col a:hover {

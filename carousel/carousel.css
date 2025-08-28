@@ -1,4 +1,4 @@
-@import url("/dist/node_modules/swiper/swiper-bundle.css");
+@import url("../node_modules/swiper/swiper-bundle.css");
 
 .swiper {
   width: 80%;
