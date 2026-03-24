@@ -30,6 +30,12 @@
     "swiper": "^12.0.2",
     "zod": "^4.1.11"
   },
+  "//overrides": "Force secure versions of hint's transitive dependencies (hint 7.1.13 has unfixed vulnerabilities)",
+  "overrides": {
+    "tar": "^7.5.11",
+    "ws": "^8.17.1",
+    "fast-xml-parser": "^5.5.7"
+  },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@types/fs-extra": "^11.0.4",
