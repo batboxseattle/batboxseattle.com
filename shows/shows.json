@@ -1,6 +1,13 @@
 {
   "shows": [
     {
+      "title": "Bremerton Night Market: June 5, 2026, Pride on the Pier",
+      "image": "media/show-flyers/2026-06-05 flyer (vertical).png",
+      "startDate": "June 5, 2026 5:00 PM",
+      "location": "Bremerton Boardwalk Night Market, Bremerton, WA",
+      "link": "https://bremertonnightmarket.com/"
+    },
+    {
       "title": "Mister Blank // Simple Minded Symphony // Batbox",
       "image": "media/show-flyers/2026-03-14 flyer.png",
       "startDate": "March 14, 2026 7:00 PM",
